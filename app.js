@@ -18,8 +18,8 @@ var Pilpres2014 = (function () {
         this.provinces = ko.observableArray([]);
         this.totalVotes1 = ko.observable(0);
         this.totalVotes2 = ko.observable(0);
-        this.percentageVotes1 = ko.observable("0%");
-        this.percentageVotes2 = ko.observable("0%");
+        this.percentageVotes1 = ko.observable("");
+        this.percentageVotes2 = ko.observable("");
         this.totalVotes = ko.observable(0);
         this.voteEntries = ko.observableArray([]);
     }
