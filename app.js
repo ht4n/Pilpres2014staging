@@ -2,45 +2,12 @@
 ///<reference path="Scripts/typings/knockout/knockout.d.ts"/>
 var VoteEntry = (function () {
     function VoteEntry() {
-        var _this = this;
         this.counter1 = ko.observable(0);
         this.counter1Percentage = ko.observable(0);
         this.counter2 = ko.observable(0);
         this.counter2Percentage = ko.observable(0);
         this.total = ko.observable(0);
         this.label = ko.observable("");
-
-        this.counter1Status = ko.computed(function () {
-            if (_this.counter1() > 50.0) {
-                return "win";
-            } else {
-                return "lose";
-            }
-        }, this);
-
-        this.counter2Status = ko.computed(function () {
-            if (_this.counter2() > 50.0) {
-                return "win";
-            } else {
-                return "lose";
-            }
-        }, this);
-
-        this.counterPercentage1Status = ko.computed(function () {
-            if (_this.counter1Percentage() > 50.0) {
-                return "win";
-            } else {
-                return "lose";
-            }
-        }, this);
-
-        this.counterPercentage2Status = ko.computed(function () {
-            if (_this.counter2Percentage() > 50.0) {
-                return "win";
-            } else {
-                return "lose";
-            }
-        }, this);
     }
     return VoteEntry;
 })();
@@ -56,12 +23,38 @@ var Pilpres2014 = (function () {
         this.totalVotes = ko.observable(0);
         this.voteEntries = ko.observableArray([]);
         this.showProvinceDetails = ko.observable(false);
+        this.date = "2014-07-17";
+        this.time = "-09-AM";
     }
     Pilpres2014.prototype.toggleProvinceDetails = function () {
         if (this.showProvinceDetails()) {
             this.showProvinceDetails(false);
         } else {
             this.showProvinceDetails(true);
+
+            var self = this;
+            var provinceCallback = function (data, status) {
+                console.log("response:" + status);
+                if (status !== "success") {
+                    return;
+                }
+
+                var dataJson = JSON.parse(data);
+                self.voteEntries.removeAll();
+                dataJson.forEach(function (entry) {
+                    var voteEntry = new VoteEntry();
+                    voteEntry.counter1(entry.PrabowoHattaVotes);
+                    voteEntry.counter1Percentage(entry.PrabowoHattaPercentage);
+                    voteEntry.counter2(entry.PrabowoHattaVotes);
+                    voteEntry.counter2Percentage(entry.JokowiKallaPercentage);
+                    voteEntry.total(entry.Total);
+                    voteEntry.label(entry.Province);
+
+                    self.voteEntries.push(voteEntry);
+                });
+            };
+
+            this.query("KPU-Feeds-" + this.date + this.time + "-province.json", null, provinceCallback);
         }
     };
 
@@ -90,32 +83,7 @@ var Pilpres2014 = (function () {
             });
         };
 
-        var date = "2014-07-17";
-        var time = "-09-AM";
-        this.query("KPU-Feeds-" + date + time + "-total.json", null, totalCallback);
-
-        var provinceCallback = function (data, status) {
-            console.log("response:" + status);
-            if (status !== "success") {
-                return;
-            }
-
-            var dataJson = JSON.parse(data);
-            self.voteEntries.removeAll();
-            dataJson.forEach(function (entry) {
-                var voteEntry = new VoteEntry();
-                voteEntry.counter1(entry.PrabowoHattaVotes);
-                voteEntry.counter1Percentage(entry.PrabowoHattaPercentage);
-                voteEntry.counter2(entry.PrabowoHattaVotes);
-                voteEntry.counter2Percentage(entry.JokowiKallaPercentage);
-                voteEntry.total(entry.Total);
-                voteEntry.label(entry.Province);
-
-                self.voteEntries.push(voteEntry);
-            });
-        };
-
-        this.query("KPU-Feeds-" + date + time + "-province.json", null, provinceCallback);
+        this.query("KPU-Feeds-" + this.date + this.time + "-total.json", null, totalCallback);
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
