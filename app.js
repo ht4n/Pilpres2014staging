@@ -25,12 +25,16 @@ var Pilpres2014 = (function () {
         this.showProvinceDetails = ko.observable(false);
         this.date = "2014-07-17";
         this.time = "-09-AM";
+
+        this.toggleProvinceText = ko.observable("Show Details");
     }
     Pilpres2014.prototype.toggleProvinceDetails = function () {
         if (this.showProvinceDetails()) {
             this.showProvinceDetails(false);
+            this.toggleProvinceText("Show Details");
         } else {
             this.showProvinceDetails(true);
+            this.toggleProvinceText("Hide Details");
 
             var self = this;
             var provinceCallback = function (data, status) {
