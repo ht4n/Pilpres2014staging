@@ -65,9 +65,9 @@ var Pilpres2014 = (function () {
                 dataJson.forEach(function (entry) {
                     var voteEntry = new VoteEntry();
                     voteEntry.counter1(entry.PrabowoHattaVotes);
-                    voteEntry.counter1Percentage(entry.PrabowoHattaPercentage);
+                    voteEntry.counter1Percentage(entry.PrabowoHattaPercentage.toFixed(2));
                     voteEntry.counter2(entry.PrabowoHattaVotes);
-                    voteEntry.counter2Percentage(entry.JokowiKallaPercentage);
+                    voteEntry.counter2Percentage(entry.JokowiKallaPercentage.toFixed(2));
                     voteEntry.total(entry.Total);
                     voteEntry.label(entry.Province);
 
