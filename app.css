@@ -4,9 +4,13 @@
 }
 
 span {
-    font-style: italic;
+    font-size: 18px;
 }
 
 table {
     width: 100%
+}
+
+table tbody {
+    text-align:center;
 }
