@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Pilpres 2014 Real Count KPU</h1>
-    <h4>Last Update: 7/16/2014 11pm PST</h4>
+    <h4>Last Update: 7/16/2014 3am PST</h4>
     <hr/>
 
     <table>
@@ -26,15 +26,19 @@
         <tbody>
             <tr>
                 <td>
-                    <span data-bind="text:counter1Percentage"></span>%
+                    <span data-bind="text:percentageVotes1"></span>%
                 </td>
                 <td>
-                    <span data-bind="text:counter2Percentage"></span>%
+                    <span data-bind="text:percentageVotes2"></span>%
                 </td>
             </tr>
             <tr>
+                <td><span data-bind="text:totalVotes1"></span></td>
+                <td><span data-bind="text:totalVotes2"></span></td>
+            </tr>
+            <tr>
                 <td>Total</td>
-                <td><span data-bind="text:total"></span></td>
+                <td><span data-bind="text:totalVotes"></span></td>
             </tr>
         </tbody>
     </table>
