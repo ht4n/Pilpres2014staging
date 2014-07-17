@@ -42,7 +42,7 @@ var Pilpres2014 = (function () {
     }
     Pilpres2014.prototype.updateVoteByDate = function (data, event) {
         var vm = ko.contextFor(event.currentTarget);
-        vm.refresh(data.datetime);
+        vm.$root.refresh(data.datetime);
     };
 
     Pilpres2014.prototype.toggleProvinceDetails = function () {
