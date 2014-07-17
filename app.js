@@ -34,8 +34,7 @@ var Pilpres2014 = (function () {
 
         // Sets the current one
         var historicalFeedsLength = this.historicalFeeds().length;
-        this.datetime = this.historicalFeeds()[historicalFeedsLength - 1];
-        ;
+        this.datetime = this.historicalFeeds()[historicalFeedsLength - 1].datetime;
 
         this.toggleProvinceText = ko.observable("Show Details");
     }
