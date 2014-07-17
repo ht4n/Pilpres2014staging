@@ -23,8 +23,19 @@ var Pilpres2014 = (function () {
         this.totalVotes = ko.observable(0);
         this.voteEntries = ko.observableArray([]);
         this.showProvinceDetails = ko.observable(false);
-        this.date = "2014-07-17";
-        this.time = "-09-AM";
+
+        var baseFeedUrl = "https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-";
+        this.historicalFeeds = ko.observableArray([
+            { "datetime": "2014-07-17-03-AM", "url": baseFeedUrl },
+            { "datetime": "2014-07-17-04-AM", "url": baseFeedUrl },
+            { "datetime": "2014-07-17-08-AM", "url": baseFeedUrl },
+            { "datetime": "2014-07-17-09-AM", "url": baseFeedUrl }
+        ]);
+
+        // Sets the current one
+        var historicalFeedsLength = this.historicalFeeds().length;
+        this.datetime = this.historicalFeeds()[historicalFeedsLength - 1];
+        ;
 
         this.toggleProvinceText = ko.observable("Show Details");
     }
@@ -58,7 +69,7 @@ var Pilpres2014 = (function () {
                 });
             };
 
-            this.query("KPU-Feeds-" + this.date + this.time + "-province.json", null, provinceCallback);
+            this.query("KPU-Feeds-" + this.datetime + "-province.json", null, provinceCallback);
         }
     };
 
@@ -87,7 +98,7 @@ var Pilpres2014 = (function () {
             });
         };
 
-        this.query("KPU-Feeds-" + this.date + this.time + "-total.json", null, totalCallback);
+        this.query("KPU-Feeds-" + this.datetime + "-total.json", null, totalCallback);
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {

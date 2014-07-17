@@ -42,3 +42,11 @@ table tbody {
 .lose {
     background:#ffdfdf;
 }
+
+.caption {
+    font-size:12px;
+}
+
+a {
+    font-size:12px;
+}
