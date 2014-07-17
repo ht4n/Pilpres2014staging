@@ -2,12 +2,45 @@
 ///<reference path="Scripts/typings/knockout/knockout.d.ts"/>
 var VoteEntry = (function () {
     function VoteEntry() {
+        var _this = this;
         this.counter1 = ko.observable(0);
         this.counter1Percentage = ko.observable(0);
         this.counter2 = ko.observable(0);
         this.counter2Percentage = ko.observable(0);
         this.total = ko.observable(0);
         this.label = ko.observable("");
+
+        this.counter1Status = ko.computed(function () {
+            if (_this.counter1() > 50.0) {
+                return "win";
+            } else {
+                return "lose";
+            }
+        }, this);
+
+        this.counter2Status = ko.computed(function () {
+            if (_this.counter2() > 50.0) {
+                return "win";
+            } else {
+                return "lose";
+            }
+        }, this);
+
+        this.counterPercentage1Status = ko.computed(function () {
+            if (_this.counter1Percentage() > 50.0) {
+                return "win";
+            } else {
+                return "lose";
+            }
+        }, this);
+
+        this.counterPercentage2Status = ko.computed(function () {
+            if (_this.counter2Percentage() > 50.0) {
+                return "win";
+            } else {
+                return "lose";
+            }
+        }, this);
     }
     return VoteEntry;
 })();
@@ -22,7 +55,16 @@ var Pilpres2014 = (function () {
         this.percentageVotes2 = ko.observable("");
         this.totalVotes = ko.observable(0);
         this.voteEntries = ko.observableArray([]);
+        this.showProvinceDetails = ko.observable(false);
     }
+    Pilpres2014.prototype.toggleProvinceDetails = function () {
+        if (this.showProvinceDetails()) {
+            this.showProvinceDetails(false);
+        } else {
+            this.showProvinceDetails(true);
+        }
+    };
+
     Pilpres2014.prototype.refresh = function () {
         var self = this;
 

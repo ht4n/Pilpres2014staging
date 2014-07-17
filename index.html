@@ -93,14 +93,15 @@
         The source-code is shared in <a href="https://github.com/ht4n/Pilpres2014">Pilpres2014 GitHub</a> under APACHE 2.0 license.
     </p>
 
+    <a href="#" data-bind="click:toggleProvinceDetails">Details</a>
+
+    <!-- ko if:showProvinceDetails -->
     <table>
         <thead>
             <tr>
                 <th>Province</th>
-                <th>PrabowoHatta(#)</th>
-                <th>PrabowoHatta(%)</th>
-                <th>JokowiKalla(#)</th>
-                <th>JokowiKalla(%)</th>
+                <th>Prabowo-Hatta(%)</th>
+                <th>Jokowi-Kalla(%)</th>
                 <th>Total</th>
             </tr>
         </thead>
@@ -108,14 +109,12 @@
             <!-- ko foreach:voteEntries -->
             <tr>
                 <td><span data-bind="text:label"></span></td>
-                <td><span data-bind="text:counter1"></span></td>
-                <td><span data-bind="text:counter1Percentage"></span></td>
-                <td><span data-bind="text:counter2"></span></td>
-                <td><span data-bind="text:counter2Percentage"></span></td>
-                <td><span data-bind="text:total"></span></td>
+                <td><span data-bind="text:counter1Percentage,css:{win:counter1PercentageStatus()}"></span></td>
+                <td><span data-bind="text:counter2Percentage,css:{win:counter2PercentageStatus()}"></span></td>
             </tr>
             <!-- /ko -->
         </tbody>
-    </table>    
+    </table>
+    <!-- /ko -->
 </body>
 </html>
