@@ -109,8 +109,8 @@
             <!-- ko foreach:voteEntries -->
             <tr>
                 <td><span data-bind="text:label"></span></td>
-                <td><span data-bind="text:counter1Percentage,css:{win:counter1PercentageStatus()}"></span></td>
-                <td><span data-bind="text:counter2Percentage,css:{win:counter2PercentageStatus()}"></span></td>
+                <td><span data-bind="text:counter1Percentage,css:{win:counter1Percentage() > 50.0,lose:counter1Percentage() < 50.0}"></span></td>
+                <td><span data-bind="text:counter2Percentage,css:{win:counter2Percentage() > 50.0,lose:counter2Percentage() < 50.0}"></span></td>
             </tr>
             <!-- /ko -->
         </tbody>
