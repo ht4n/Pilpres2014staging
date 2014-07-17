@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pilpres2014 Watchdogs</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/knockout-3.1.0.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Pilpres 2014 Real Count KPU</h1>
+    <h4>Last Update: 7/16/2014 11pm PST</h4>
+    <hr/>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Joko Widodo-Jusuf Kalla</th>
+                <th>Prabowo Subianto - Hatta Rajasa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span data-bind="text:counter1Percentage"></span>%
+                </td>
+                <td>
+                    <span data-bind="text:counter2Percentage"></span>%
+                </td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><span data-bind="text:total"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr/>    
+    <h2>Historical Data:</h2>
+
+    <div>
+        <span>2014-07-16 3:00 AM PST|</span>
+        <a href="https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-2014-07-17-3-AM.json">complete</a>
+        |
+        <a href="https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-2014-07-17-3-AM-total.json">national</a>
+        |
+        <a href="https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-2014-07-17-3-AM-province.json">province</a>
+        |
+        <a href="https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-2014-07-17-3-AM-kabupaten.json">kecamatan</a>
+    </div>
+
+    <p>
+        <i>Source:<a href="http://pilpres2014.kpu.go.id/da1.php">KPU.go.id</a></i>
+        
+        Data is obtained by automatic crawling http://pilpres2014.kpu.go.id periodically and updated every 6-12 hours.
+        
+        We don't have any affiliation with any political party. We are those who care for peaceful, clean, and honest democracy.
+
+        The source-code to obtain the data from http://pilpres2014.kpu.go.id is shared publicly in <a href="https://github.com/ht4n/Pilpres2014">Pilpres2014 GitHub</a> 
+        for free under APACHE 2.0 license.
+        Anyone can run the code anywhere anytime on your own risks and consequences.
+               
+        Please also visits our friends who are also publishing their Pilpres2014 data:
+        <ul>
+            <li><a href="http://www.kawalpemilu.org/">KawalPemilu.org</a></li>
+        </ul>
+    </p>
+</body>
+</html>
