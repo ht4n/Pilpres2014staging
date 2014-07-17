@@ -90,17 +90,11 @@ var Pilpres2014 = (function () {
 
             var dataJson = JSON.parse(data);
             dataJson.forEach(function (entry) {
-                var voteEntry = new VoteEntry();
-                voteEntry.counter1 = entry.PrabowoHattaVotes;
-                voteEntry.counter1Percentage = entry.PrabowoHattaPercentage;
-                voteEntry.counter2 = entry.JokowiKallaVotes;
-                voteEntry.counter2Percentage = entry.JokowiKallaPercentage;
-
                 self.totalVotes(entry.Total);
                 self.totalVotes1(entry.PrabowoHattaVotes);
                 self.totalVotes2(entry.JokowiKallaVotes);
-                self.percentageVotes1(entry.PrabowoHattaPercentage + "%");
-                self.percentageVotes2(entry.JokowiKallaPercentage + "%");
+                self.percentageVotes1(entry.PrabowoHattaPercentage.toFixed(2) + "%");
+                self.percentageVotes2(entry.JokowiKallaPercentage.toFixed(2) + "%");
             });
         };
 
