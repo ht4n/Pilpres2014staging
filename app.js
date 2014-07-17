@@ -37,7 +37,14 @@ var Pilpres2014 = (function () {
         this.datetime = this.historicalFeeds()[historicalFeedsLength - 1].datetime;
 
         this.toggleProvinceText = ko.observable("Show Details");
+
+        this.refresh(this.datetime);
     }
+    Pilpres2014.prototype.updateVoteByDate = function (data, event) {
+        var vm = ko.contextFor(event.currentTarget);
+        vm.refresh(data.datetime);
+    };
+
     Pilpres2014.prototype.toggleProvinceDetails = function () {
         if (this.showProvinceDetails()) {
             this.showProvinceDetails(false);
@@ -72,7 +79,7 @@ var Pilpres2014 = (function () {
         }
     };
 
-    Pilpres2014.prototype.refresh = function () {
+    Pilpres2014.prototype.refresh = function (datetime) {
         var self = this;
 
         var totalCallback = function (data, status) {
@@ -97,7 +104,7 @@ var Pilpres2014 = (function () {
             });
         };
 
-        this.query("KPU-Feeds-" + this.datetime + "-total.json", null, totalCallback);
+        this.query("KPU-Feeds-" + datetime + "-total.json", null, totalCallback);
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
@@ -120,7 +127,5 @@ var Pilpres2014 = (function () {
 window.onload = function () {
     var pilpres2014ViewModel = new Pilpres2014();
     ko.applyBindings(pilpres2014ViewModel);
-
-    pilpres2014ViewModel.refresh();
 };
 //# sourceMappingURL=app.js.map

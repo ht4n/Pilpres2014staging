@@ -46,7 +46,7 @@
 
     <!-- ko foreach:historicalFeeds -->
     <div>
-        <span class="caption" data-bind="text:datetime"></span><span class="caption">&nbsp;PST</span>
+        <a href="#" data-bind="click:$root.updateVoteByDate,text:datetime"></a><span class="caption">&nbsp;PST</span>
         <a data-bind="attr:{href:url + datetime + '.csv'}">complete</a>
         |
         <a data-bind="attr:{href:url + datetime + '-total.json'}">national</a>
