@@ -1,7 +1,12 @@
 ﻿body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'tahoma', 'Segoe UI', sans-serif;
+    width: 98%;
 }
 
 span {
     font-style: italic;
+}
+
+table {
+    width: 100%
 }
