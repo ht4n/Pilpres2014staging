@@ -49,7 +49,7 @@ var Pilpres2014 = (function () {
         };
 
         var date = "2014-07-17";
-        var time = "-08-AM";
+        var time = "-09-AM";
         this.query("KPU-Feeds-" + date + time + "-total.json", null, totalCallback);
 
         var provinceCallback = function (data, status) {
