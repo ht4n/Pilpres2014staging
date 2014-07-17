@@ -43,8 +43,8 @@ var Pilpres2014 = (function () {
                 self.totalVotes(entry.Total);
                 self.totalVotes1(entry.PrabowoHattaVotes);
                 self.totalVotes2(entry.JokowiKallaVotes);
-                self.percentageVotes1(entry.PrabowoHattaPercentage);
-                self.percentageVotes2(entry.JokowiKallaPercentage);
+                self.percentageVotes1(entry.PrabowoHattaPercentage * 100);
+                self.percentageVotes2(entry.JokowiKallaPercentage * 100);
             });
         };
 
