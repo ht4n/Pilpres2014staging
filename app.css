@@ -23,12 +23,12 @@ table tbody {
     font-size: 24px;
 }
 
-.score {
+.bigScore {
     font-size: 40px;
 }
 
 .smallScore {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .candidate1 {

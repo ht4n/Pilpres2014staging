@@ -39,7 +39,7 @@
                     <span data-bind="text:percentageVotes2,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
             </tr>
-            <!-- ko if:$index() > 0 -->
+            <!-- ko if:$index() == 0 -->
             <tr>
                 <td><span data-bind="text:totalVotes1"></span></td>
                 <td><span data-bind="text:totalVotes2"></span></td>
