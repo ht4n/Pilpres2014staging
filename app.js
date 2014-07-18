@@ -14,7 +14,6 @@ var VoteEntry = (function () {
 
 var Pilpres2014 = (function () {
     function Pilpres2014() {
-        var _this = this;
         var self = this;
         this.url = ko.observable("https://github.com/ht4n/Pilpres2014");
         this.provinces = ko.observableArray([]);
@@ -38,14 +37,14 @@ var Pilpres2014 = (function () {
             dataJson.forEach(function (entry) {
                 self.historicalFeeds.push(entry);
             });
-        });
 
-        // Sets the current feed (latest) one
-        var historicalFeedsLength = this.historicalFeeds().length;
-        var currentFeedItem = this.historicalFeeds()[historicalFeedsLength - 1];
-        this.selectedDataFeed = ko.observable(currentFeedItem);
-        this.selectedDataFeed.subscribe(function (value) {
-            _this.refresh(value.datetime);
+            // Sets the current feed (latest) one
+            var historicalFeedsLength = self.historicalFeeds().length;
+            var currentFeedItem = self.historicalFeeds()[historicalFeedsLength - 1];
+            self.selectedDataFeed = ko.observable(currentFeedItem);
+            self.selectedDataFeed.subscribe(function (value) {
+                self.refresh(value.datetime);
+            });
         });
 
         this.toggleProvinceText = ko.observable("Show votes by province");
