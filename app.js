@@ -41,9 +41,9 @@ var Pilpres2014 = (function () {
                 self.historicalFeeds.push(entry);
             });
 
-            // Sets the current feed (latest) one
+            // Sets the current feed as the first one
             var historicalFeedsLength = _this.historicalFeeds().length;
-            var currentFeedItem = _this.historicalFeeds()[historicalFeedsLength - 1];
+            var currentFeedItem = _this.historicalFeeds()[0];
             _this.selectedDataFeed(currentFeedItem);
 
             _this.refresh(_this.selectedDataFeed().datetime);
@@ -110,8 +110,8 @@ var Pilpres2014 = (function () {
                 var context = _this;
                 var voteEntry = new VoteEntry();
                 voteEntry.totalVotes1(entry.PrabowoHattaVotes);
-                voteEntry.percentageVotes1(entry.JokowiKallaVotes);
-                voteEntry.totalVotes2(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
+                voteEntry.percentageVotes1(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
+                voteEntry.totalVotes2(entry.JokowiKallaVotes);
                 voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
                 voteEntry.total(entry.Total);
                 voteEntry.label(datetime);
