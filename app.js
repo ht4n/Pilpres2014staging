@@ -77,7 +77,7 @@ var Pilpres2014 = (function () {
                 }
 
                 var dataJson = JSON.parse(data);
-                self.voteEntries.removeAll();
+                self.provinceVoteEntries.removeAll();
                 dataJson.forEach(function (entry) {
                     var voteEntry = new VoteEntry();
                     voteEntry.totalVotes1(entry.PrabowoHattaVotes);
