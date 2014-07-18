@@ -46,10 +46,10 @@ var Pilpres2014 = (function () {
             var currentFeedItem = _this.historicalFeeds()[historicalFeedsLength - 1];
             _this.selectedDataFeed(currentFeedItem);
 
-            _this.refresh(_this.selectedDataFeed());
+            _this.refresh(_this.selectedDataFeed().datetime);
 
             _this.selectedDataFeed.subscribe(function (value) {
-                _this.refresh(value);
+                _this.refresh(value.datetime);
             });
         });
 
