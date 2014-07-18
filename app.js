@@ -18,11 +18,11 @@ var Pilpres2014 = (function () {
         var self = this;
         this.url = ko.observable("https://github.com/ht4n/Pilpres2014");
         this.provinces = ko.observableArray([]);
-        this.totalVotes1 = ko.observable(0);
-        this.totalVotes2 = ko.observable(0);
+        this.totalVotes1 = ko.observable("");
+        this.totalVotes2 = ko.observable("");
         this.percentageVotes1 = ko.observable("");
         this.percentageVotes2 = ko.observable("");
-        this.totalVotes = ko.observable(0);
+        this.totalVotes = ko.observable("");
         this.voteEntries = ko.observableArray([]);
         this.provinceVoteEntries = ko.observableArray([]);
         this.showProvinceDetails = ko.observable(false);
@@ -125,6 +125,16 @@ var Pilpres2014 = (function () {
         this.historicalFeeds().forEach(function (value) {
             _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, totalCallback);
         });
+
+        if (this.voteEntries().length > 0) {
+            var firstEntry = this.voteEntries()[0];
+
+            this.percentageVotes1(firstEntry.percentageVotes1());
+            this.percentageVotes2(firstEntry.percentageVotes2());
+            this.totalVotes1(firstEntry.totalVotes1());
+            this.totalVotes2(firstEntry.totalVotes2());
+            this.totalVotes(firstEntry.total());
+        }
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
