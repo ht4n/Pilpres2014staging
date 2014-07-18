@@ -51,13 +51,13 @@
 
     <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
     <!-- ko with:selectedDataFeed -->
-    <a data-bind="attr:{href:url + datetime + '.csv'}">complete</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '.csv'}">complete</a>
     |
-    <a data-bind="attr:{href:url + datetime + '-total.json'}">national</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-total.json'}">national</a>
     |
-    <a data-bind="attr:{href:url + datetime + '-province.json'}">province</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-province.json'}">province</a>
     |
-    <a data-bind="attr:{href:url + datetime + '-kabupaten.json'}">kabupaten</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.json'}">kabupaten</a>
     <!-- /ko -->
     <div>
         <span class="caption">
