@@ -49,7 +49,7 @@ var Pilpres2014 = (function () {
             _this.refresh(_this.selectedDataFeed().datetime);
 
             _this.selectedDataFeed.subscribe(function (value) {
-                _this.refresh(value.datetime);
+                _this.refresh(value);
             });
         });
 
