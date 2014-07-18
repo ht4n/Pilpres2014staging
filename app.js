@@ -48,10 +48,6 @@ var Pilpres2014 = (function () {
             _this.selectedDataFeed(currentFeedItem);
 
             _this.refresh(_this.selectedDataFeed().datetime);
-
-            _this.selectedDataFeed.subscribe(function (value) {
-                _this.refresh(value.datetime);
-            });
         });
 
         this.toggleProvinceText = ko.observable("Show votes by province");
