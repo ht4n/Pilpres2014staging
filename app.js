@@ -30,6 +30,7 @@ var Pilpres2014 = (function () {
         this.baseFeedUrl = "https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-";
         this.historicalFeeds = ko.observableArray([]);
         this.selectedDataFeed = ko.observable(null);
+        this.lastUpdatedTime = ko.observable("");
 
         this.query("feedsources.json", null, function (data, status) {
             console.log("response:" + status);
@@ -46,6 +47,7 @@ var Pilpres2014 = (function () {
             var historicalFeedsLength = _this.historicalFeeds().length;
             var currentFeedItem = _this.historicalFeeds()[0];
             _this.selectedDataFeed(currentFeedItem);
+            _this.lastUpdatedTime(_this.selectedDataFeed().datetime);
 
             _this.refresh(_this.selectedDataFeed().datetime);
         });
