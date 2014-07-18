@@ -1,14 +1,9 @@
 ﻿body {
     font-family: 'tahoma', 'Segoe UI', sans-serif;
-    width: 99%;
 }
 
 span {
     font-size: 18px;
-}
-
-table {
-    width: 100%
 }
 
 table tbody {
