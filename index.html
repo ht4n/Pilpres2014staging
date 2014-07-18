@@ -21,8 +21,7 @@
     <table class="scoreTable">
         <thead>
             <tr>
-                <th style="width:40%" class="candidate1">@Prabowo08</th>
-                <th style="width:10%" class="neural"></th>
+                <th style="width:50%" class="candidate1">@Prabowo08</th>
                 <th class="candidate2">@Jokowi_do2</th>
             </tr>
         </thead>
@@ -31,9 +30,13 @@
             <!-- ko if:$index() < 10 -->
             <tr>
                 <td>
+                    <span class="caption" data-bind="text:label"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <span data-bind="text:percentageVotes1,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
-                <td><span class="caption" data-bind="text:label"></span></td>
                 <td>
                     <span data-bind="text:percentageVotes2,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
@@ -45,14 +48,16 @@
                 <td><span data-bind="text:totalVotes2"></span></td>
             </tr>
             <!-- /ko -->
+
+            <!-- ko if:$index() == 0 -->
             <tr>
                 <td colspan="3">
-                    <!-- ko if:$index() == 0 -->
                     <div class="redSeparator"></div>
-                    <!-- /ko -->
                     <div class="blackSeparator"></div>
                 </td>
             </tr>
+            <!-- /ko -->
+
             <!-- /ko -->
             <!-- /ko -->
         </tbody>
