@@ -1,28 +1,30 @@
 ﻿body {
     font-family: 'tahoma', 'Segoe UI', sans-serif;
-    width: 100%;
 }
 
 span {
     font-size: 18px;
 }
 
-table {
-    width: 99%
+table tbody {
+    text-align: center;
 }
 
-table tbody {
-    text-align:center;
+.scoreTable {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
 }
 
 .pageTitle {
-    background:#2A0438;
+    background: #2A0438;
     color: white;
     padding: 10px;
+    font-size: 24px;
 }
 
 .score {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .candidate1 {
@@ -33,4 +35,30 @@ table tbody {
 .candidate2 {
     background: black;
     color: white;
+}
+
+.win {
+    background:#b0ffaa;
+}
+
+.lose {
+    background:#ffdfdf;
+}
+
+.caption {
+    font-size:12px;
+}
+
+a {
+    font-size:12px;
+}
+
+.redSeparator {
+    height:4px;
+    background:red;
+}
+
+.blackSeparator {
+    height:4px;
+    background:black;
 }
