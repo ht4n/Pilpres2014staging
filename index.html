@@ -22,6 +22,7 @@
         <thead>
             <tr>
                 <th style="width:50%" class="candidate1">@Prabowo08</th>
+                <th>Date</th>
                 <th class="candidate2">@Jokowi_do2</th>
             </tr>
         </thead>
@@ -29,12 +30,10 @@
             <!-- ko foreach:voteEntries -->
             <!-- ko if:$index() < 10 -->
             <tr>
-                <td colspan="2"><span data-bind="text:label"></span></td>
-            </tr>
-            <tr>
                 <td>
                     <span data-bind="text:percentageVotes1,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
+                <td colspan="2"><span data-bind="text:label"></span></td>
                 <td>
                     <span data-bind="text:percentageVotes2,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
@@ -42,11 +41,12 @@
             <!-- ko if:$index() == 0 -->
             <tr>
                 <td><span data-bind="text:totalVotes1"></span></td>
+                <td></td>
                 <td><span data-bind="text:totalVotes2"></span></td>
             </tr>
             <!-- /ko -->
             <tr>
-                <td colspan="2">
+                <td colspan="3">
                     <div class="blackSeparator"></div>
                     <div class="redSeparator"></div>
                 </td>
