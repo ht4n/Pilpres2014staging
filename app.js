@@ -48,11 +48,11 @@ var Pilpres2014 = (function () {
             var historicalFeedsLength = _this.historicalFeeds().length;
             var currentFeedItem = _this.historicalFeeds()[historicalFeedsLength - 1];
             self.selectedDataFeed(currentFeedItem);
+
+            _this.refresh(_this.selectedDataFeed().datetime);
         });
 
         this.toggleProvinceText = ko.observable("Show votes by province");
-
-        this.refresh(this.selectedDataFeed().datetime);
     }
     Pilpres2014.prototype.updateVoteByDate = function (data, event) {
         var vm = ko.contextFor(event.currentTarget);
