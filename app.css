@@ -36,6 +36,10 @@ table tbody {
     color: white;
 }
 
+.neural {
+    background:#1371c1
+}
+
 .candidate2 {
     background: black;
     color: white;
