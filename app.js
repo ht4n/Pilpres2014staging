@@ -95,7 +95,9 @@ var Pilpres2014 = (function () {
     };
 
     Pilpres2014.prototype.refresh = function (datetime) {
+        var _this = this;
         var self = this;
+        self.voteEntries.removeAll();
 
         var totalCallback = function (data, status) {
             var _this = this;
@@ -105,7 +107,6 @@ var Pilpres2014 = (function () {
             }
 
             var dataJson = JSON.parse(data);
-            self.voteEntries.removeAll();
             dataJson.forEach(function (entry) {
                 var context = _this;
                 var voteEntry = new VoteEntry();
@@ -120,7 +121,9 @@ var Pilpres2014 = (function () {
             });
         };
 
-        this.query("KPU-Feeds-" + datetime + "-total.json", datetime, totalCallback);
+        this.historicalFeeds().forEach(function (value) {
+            _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, totalCallback);
+        });
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
