@@ -24,6 +24,7 @@ var Pilpres2014 = (function () {
         this.percentageVotes2 = ko.observable("");
         this.totalVotes = ko.observable(0);
         this.voteEntries = ko.observableArray([]);
+        this.provinceVoteEntries = ko.observableArray([]);
         this.showProvinceDetails = ko.observable(false);
 
         this.baseFeedUrl = "https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-";
@@ -86,7 +87,7 @@ var Pilpres2014 = (function () {
                     voteEntry.total(entry.Total);
                     voteEntry.label(entry.Province);
 
-                    self.voteEntries.push(voteEntry);
+                    self.provinceVoteEntries.push(voteEntry);
                 });
             };
 
