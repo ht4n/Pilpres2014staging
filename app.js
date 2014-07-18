@@ -8,6 +8,8 @@ var VoteEntry = (function () {
         this.percentageVotes2 = ko.observable("");
         this.total = ko.observable("");
         this.label = ko.observable("");
+        this.status1 = ko.observable("");
+        this.status2 = ko.observable("");
     }
     return VoteEntry;
 })();
@@ -22,6 +24,8 @@ var Pilpres2014 = (function () {
         this.totalVotes2 = ko.observable("");
         this.percentageVotes1 = ko.observable("");
         this.percentageVotes2 = ko.observable("");
+        this.status1 = ko.observable("");
+        this.status2 = ko.observable("");
         this.totalVotes = ko.observable("");
         this.voteEntries = ko.observableArray([]);
         this.provinceVoteEntries = ko.observableArray([]);
@@ -110,9 +114,13 @@ var Pilpres2014 = (function () {
                 var context = _this;
                 var voteEntry = new VoteEntry();
                 voteEntry.totalVotes1(entry.PrabowoHattaVotes);
+                voteEntry.status1(parseFloat(entry.PrabowoHattaPercentage) > 50.0 ? "win" : "");
                 voteEntry.percentageVotes1(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
+
                 voteEntry.totalVotes2(entry.JokowiKallaVotes);
+                voteEntry.status2(parseFloat(entry.JokowiKallaPercentage) > 50.0 ? "win" : "");
                 voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
+
                 voteEntry.total(entry.Total);
                 voteEntry.label(context);
 
@@ -127,6 +135,8 @@ var Pilpres2014 = (function () {
                 self.totalVotes1(firstEntry.totalVotes1());
                 self.totalVotes2(firstEntry.totalVotes2());
                 self.totalVotes(firstEntry.total());
+                self.status1(firstEntry.status1());
+                self.status2(firstEntry.status2());
             }
         };
 

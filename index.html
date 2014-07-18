@@ -26,10 +26,10 @@
         <tbody>
             <tr>
                 <td>
-                    <span class="bigScore" data-bind="text:percentageVotes1,css:{win:percentageVotes1() > 50,lose:percentageVotes1() < 50}"></span>
+                    <span class="bigScore" data-bind="text:percentageVotes1,class:status1()"></span>
                 </td>
                 <td>
-                    <span class="bigScore" data-bind="text:percentageVotes2,css:{win:percentageVotes2() > 50,lose:percentageVotes2() < 50}"></span>
+                    <span class="bigScore" data-bind="text:percentageVotes2,class:status2()"></span>
                 </td>
             </tr>
             <tr>
@@ -51,11 +51,11 @@
             <!-- ko if:$index() != 0-->
             <tr>
                 <td>
-                    <span class="caption" data-bind="text:percentageVotes1,css:{win:percentageVotes1() > 50,lose:percentageVotes1() < 50}"></span>
+                    <span class="caption" data-bind="text:percentageVotes1,attr:{class:status1()}"></span>
                 </td>
                 <td><span class="caption" data-bind="text:label"></span></td>
                 <td>
-                    <span class="caption" data-bind="text:percentageVotes2,css:{win:percentageVotes2() > 50,lose:percentageVotes2() < 50}"></span>
+                    <span class="caption" data-bind="text:percentageVotes2,attr:{class:status2()}"></span>
                 </td>
             </tr>
             <!-- /ko -->
