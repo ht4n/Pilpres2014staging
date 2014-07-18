@@ -10,6 +10,12 @@ table tbody {
     text-align: center;
 }
 
+scoreTable {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+
 .pageTitle {
     background: #2A0438;
     color: white;
