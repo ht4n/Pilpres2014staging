@@ -2,10 +2,10 @@
 ///<reference path="Scripts/typings/knockout/knockout.d.ts"/>
 var VoteEntry = (function () {
     function VoteEntry() {
-        this.counter1 = ko.observable("");
-        this.counter1Percentage = ko.observable("");
-        this.counter2 = ko.observable("");
-        this.counter2Percentage = ko.observable("");
+        this.totalVotes1 = ko.observable("");
+        this.percentageVotes1 = ko.observable("");
+        this.totalVotes2 = ko.observable("");
+        this.percentageVotes2 = ko.observable("");
         this.total = ko.observable("");
         this.label = ko.observable("");
     }
@@ -79,10 +79,10 @@ var Pilpres2014 = (function () {
                 self.voteEntries.removeAll();
                 dataJson.forEach(function (entry) {
                     var voteEntry = new VoteEntry();
-                    voteEntry.counter1(entry.PrabowoHattaVotes);
-                    voteEntry.counter1Percentage(parseFloat(entry.PrabowoHattaPercentage).toFixed(2));
-                    voteEntry.counter2(entry.PrabowoHattaVotes);
-                    voteEntry.counter2Percentage(parseFloat(entry.JokowiKallaPercentage).toFixed(2));
+                    voteEntry.totalVotes1(entry.PrabowoHattaVotes);
+                    voteEntry.percentageVotes1(parseFloat(entry.PrabowoHattaPercentage).toFixed(2));
+                    voteEntry.totalVotes2(entry.PrabowoHattaVotes);
+                    voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2));
                     voteEntry.total(entry.Total);
                     voteEntry.label(entry.Province);
 
@@ -109,10 +109,10 @@ var Pilpres2014 = (function () {
             dataJson.forEach(function (entry) {
                 var context = _this;
                 var voteEntry = new VoteEntry();
-                voteEntry.counter1(entry.PrabowoHattaVotes);
-                voteEntry.counter2(entry.JokowiKallaVotes);
-                voteEntry.counter1Percentage(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
-                voteEntry.counter2Percentage(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
+                voteEntry.totalVotes1(entry.PrabowoHattaVotes);
+                voteEntry.percentageVotes1(entry.JokowiKallaVotes);
+                voteEntry.totalVotes2(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
+                voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
                 voteEntry.total(entry.Total);
                 voteEntry.label(datetime);
 
