@@ -95,8 +95,8 @@
             <!-- ko foreach:provinceVoteEntries -->
             <tr>
                 <td><span data-bind="text:label"></span></td>
-                <td><span data-bind="text:counter1Percentage,css:{win:percentageVotes1() > 50.0,lose:percentageVotes1() < 50.0}"></span></td>
-                <td><span data-bind="text:counter2Percentage,css:{win:percentageVotes2() > 50.0,lose:percentageVotes2() < 50.0}"></span></td>
+                <td><span data-bind="text:percentageVotes1,css:{win:percentageVotes1() > 50.0,lose:percentageVotes1() < 50.0}"></span></td>
+                <td><span data-bind="text:percentageVotes2,css:{win:percentageVotes2() > 50.0,lose:percentageVotes2() < 50.0}"></span></td>
             </tr>
             <!-- /ko -->
         </tbody>
