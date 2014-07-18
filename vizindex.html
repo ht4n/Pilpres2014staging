@@ -76,8 +76,8 @@ var svg = d3.select("body").append("svg")
 d3.tsv("totaltrend.tsv", function (error, data) {
   data.forEach(function(d) {
     d.date = parseDate(d.date);
-    d["@prabowo08"]= +d["@prabowo08"];
-    d["@jokowi_do2"] = +d["@jokowi_do2"];
+    d["PRABOWO"] = +d["PRABOWO"];
+    d["JOKOWI"] = +d["JOKOWI"];
   });
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
