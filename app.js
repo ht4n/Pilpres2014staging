@@ -135,8 +135,8 @@ var Pilpres2014 = (function () {
                 self.totalVotes1(firstEntry.totalVotes1());
                 self.totalVotes2(firstEntry.totalVotes2());
                 self.totalVotes(firstEntry.total());
-                self.status1(firstEntry.status1());
-                self.status2(firstEntry.status2());
+                self.status1("bigScore " + firstEntry.status1());
+                self.status2("bigScore " + firstEntry.status2());
             }
         };
 

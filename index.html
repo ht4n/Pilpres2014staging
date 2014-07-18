@@ -26,10 +26,10 @@
         <tbody>
             <tr>
                 <td>
-                    <span class="bigScore" data-bind="text:percentageVotes1,attr:{class:status1()}"></span>
+                    <span data-bind="text:percentageVotes1,attr:{class:status1()}"></span>
                 </td>
                 <td>
-                    <span class="bigScore" data-bind="text:percentageVotes2,attr:{class:status2()}"></span>
+                    <span data-bind="text:percentageVotes2,attr:{class:status2()}"></span>
                 </td>
             </tr>
             <tr>
@@ -63,7 +63,7 @@
         </tbody>
     </table>
     <hr/>    
-    <h3>Historical Data:</h3>
+    <div class="section">Historical Data:</div>
 
     <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
     <!-- ko with:selectedDataFeed -->
