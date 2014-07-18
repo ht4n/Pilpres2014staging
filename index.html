@@ -49,17 +49,15 @@
     <hr/>    
     <h3>Historical Data:</h3>
 
+    <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
     <!-- ko with:selectedDataFeed -->
-    <div>
-        <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
-        <a data-bind="attr:{href:url + datetime + '.csv'}">complete</a>
-        |
-        <a data-bind="attr:{href:url + datetime + '-total.json'}">national</a>
-        |
-        <a data-bind="attr:{href:url + datetime + '-province.json'}">province</a>
-        |
-        <a data-bind="attr:{href:url + datetime + '-kabupaten.json'}">kabupaten</a>
-    </div>
+    <a data-bind="attr:{href:url + datetime + '.csv'}">complete</a>
+    |
+    <a data-bind="attr:{href:url + datetime + '-total.json'}">national</a>
+    |
+    <a data-bind="attr:{href:url + datetime + '-province.json'}">province</a>
+    |
+    <a data-bind="attr:{href:url + datetime + '-kabupaten.json'}">kabupaten</a>
     <!-- /ko -->
     <div>
         <span class="caption">The data is obtained by automatic crawling http://pilpres2014.kpu.go.id periodically and updated every 6-12 hours.</span>
