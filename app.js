@@ -14,6 +14,7 @@ var VoteEntry = (function () {
 
 var Pilpres2014 = (function () {
     function Pilpres2014() {
+        var _this = this;
         var self = this;
         this.url = ko.observable("https://github.com/ht4n/Pilpres2014");
         this.provinces = ko.observableArray([]);
@@ -27,6 +28,11 @@ var Pilpres2014 = (function () {
 
         this.baseFeedUrl = "https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-";
         this.historicalFeeds = ko.observableArray([]);
+        this.selectedDataFeed = ko.observable(null);
+        this.selectedDataFeed.subscribe(function (value) {
+            _this.refresh(value.datetime);
+        });
+
         this.query("feedsources.json", null, function (data, status) {
             console.log("response:" + status);
             if (status !== "success") {
@@ -39,12 +45,9 @@ var Pilpres2014 = (function () {
             });
 
             // Sets the current feed (latest) one
-            var historicalFeedsLength = self.historicalFeeds().length;
-            var currentFeedItem = self.historicalFeeds()[historicalFeedsLength - 1];
-            self.selectedDataFeed = ko.observable(currentFeedItem);
-            self.selectedDataFeed.subscribe(function (value) {
-                self.refresh(value.datetime);
-            });
+            var historicalFeedsLength = _this.historicalFeeds().length;
+            var currentFeedItem = _this.historicalFeeds()[historicalFeedsLength - 1];
+            self.selectedDataFeed(currentFeedItem);
         });
 
         this.toggleProvinceText = ko.observable("Show votes by province");
