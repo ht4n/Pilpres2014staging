@@ -41,7 +41,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var parseDate = d3.time.format("%Y%m%d").parse;
+var parseDate = d3.time.format("%Y%m%d%h").parse;
 
 var x = d3.time.scale()
     .range([0, width]);
@@ -60,12 +60,12 @@ var yAxis = d3.svg.axis()
 var line = d3.svg.area()
     .interpolate("basis")
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d["New York"]); });
+    .y(function(d) { return y(d["@prabowo08"]); });
 
 var area = d3.svg.area()
     .interpolate("basis")
     .x(function(d) { return x(d.date); })
-    .y1(function(d) { return y(d["New York"]); });
+    .y1(function(d) { return y(d["@prabowo08"]); });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -73,18 +73,18 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("totaltrend.tsv", function (error, data) {
+d3.tsv("data.tsv", function (error, data) {
   data.forEach(function(d) {
     d.date = parseDate(d.date);
-    d["PRABOWO"] = +d["PRABOWO"];
-    d["JOKOWI"] = +d["JOKOWI"];
+    d["@prabowo08"] = +d["@prabowo08"];
+    d["@jokowi_do2"] = +d["@jokowi_do2"];
   });
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
-    d3.min(data, function(d) { return Math.min(d["New York"], d["San Francisco"]); }),
-    d3.max(data, function(d) { return Math.max(d["New York"], d["San Francisco"]); })
+    d3.min(data, function(d) { return Math.min(d["@prabowo08"], d["@jokowi_do2"]); }),
+    d3.max(data, function(d) { return Math.max(d["@prabowo08"], d["@jokowi_do2"]); })
   ]);
 
   svg.datum(data);
@@ -102,7 +102,7 @@ d3.tsv("totaltrend.tsv", function (error, data) {
   svg.append("path")
       .attr("class", "area above")
       .attr("clip-path", "url(#clip-above)")
-      .attr("d", area.y0(function(d) { return y(d["San Francisco"]); }));
+      .attr("d", area.y0(function(d) { return y(d["@jokowi_do2"]); }));
 
   svg.append("path")
       .attr("class", "area below")
