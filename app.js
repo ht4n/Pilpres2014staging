@@ -90,7 +90,7 @@ var Pilpres2014 = (function () {
                 });
             };
 
-            this.query("KPU-Feeds-" + this.selectedDataFeed() + "-province.json", null, provinceCallback);
+            this.query("KPU-Feeds-" + this.selectedDataFeed().datetime + "-province.json", null, provinceCallback);
         }
     };
 
