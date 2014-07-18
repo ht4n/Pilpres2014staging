@@ -7,3 +7,7 @@ copy %1\*.css
 copy %1\*.json
 
 copy %1\*.config
+
+git add *
+git commit -m "deploy"
+git push
