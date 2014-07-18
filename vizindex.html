@@ -73,11 +73,11 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data.tsv", function(error, data) {
+d3.tsv("totaltrend.tsv", function (error, data) {
   data.forEach(function(d) {
     d.date = parseDate(d.date);
-    d["New York"]= +d["New York"];
-    d["San Francisco"] = +d["San Francisco"];
+    d["@prabowo08"]= +d["@prabowo08"];
+    d["@jokowi_do2"] = +d["@jokowi_do2"];
   });
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
