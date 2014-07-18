@@ -13,11 +13,12 @@
 </head>
 <body>
     <div class="pageTitle">Pilpres 2014 - DA1 Count</div>
-    <div><span class="caption">source: <a href="http://pilpres2014.kpu.go.id/da1.php">Formulir DA1 - pilpres2014.KPU.go.id</a></span></div>
-    <div><span class="caption">contact us: <a href="mailto:pilpres2014@outlook.com">pilpres2014</a></span></div>
     <hr/>
     
-    <div><span>last update: </span><span data-bind="text:selectedDataFeed"></span></div>
+    <!-- ko with:selectedDataFeed -->
+    <div><span>last update: </span><span data-bind="text:datetime"></span></div>
+    <!-- /ko -->
+
     <table class="scoreTable">
         <thead>
             <tr>
@@ -77,6 +78,8 @@
     |
     <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.json'}">kabupaten</a>
     <!-- /ko -->
+    
+    <hr />
     <div>
         <span class="caption">
             The data is obtained by automatic crawling http://pilpres2014.kpu.go.id periodically and updated every 6-12 hours.
@@ -89,6 +92,8 @@
     <div>
         <span class="caption">The source-code is shared in <a href="https://github.com/ht4n/Pilpres2014">Pilpres2014 GitHub</a> under APACHE 2.0 license.</span>
     </div>
+    <div><span class="caption">source: <a href="http://pilpres2014.kpu.go.id/da1.php">Formulir DA1 - pilpres2014.KPU.go.id</a></span></div>
+    <div><span class="caption">contact us: <a href="mailto:pilpres2014@outlook.com">pilpres2014</a></span></div>
     <hr />
 
     <a href="#" data-bind="click:toggleProvinceDetails,text:toggleProvinceText">Show Details</a>
