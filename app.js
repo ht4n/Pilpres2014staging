@@ -2,11 +2,11 @@
 ///<reference path="Scripts/typings/knockout/knockout.d.ts"/>
 var VoteEntry = (function () {
     function VoteEntry() {
-        this.counter1 = ko.observable(0);
+        this.counter1 = ko.observable("");
         this.counter1Percentage = ko.observable("");
-        this.counter2 = ko.observable(0);
+        this.counter2 = ko.observable("");
         this.counter2Percentage = ko.observable("");
-        this.total = ko.observable(0);
+        this.total = ko.observable("");
         this.label = ko.observable("");
     }
     return VoteEntry;
@@ -98,22 +98,29 @@ var Pilpres2014 = (function () {
         var self = this;
 
         var totalCallback = function (data, status) {
+            var _this = this;
             console.log("response:" + status);
             if (status !== "success") {
                 return;
             }
 
             var dataJson = JSON.parse(data);
+            self.voteEntries.removeAll();
             dataJson.forEach(function (entry) {
-                self.totalVotes(entry.Total);
-                self.totalVotes1(entry.PrabowoHattaVotes);
-                self.totalVotes2(entry.JokowiKallaVotes);
-                self.percentageVotes1(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
-                self.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
+                var context = _this;
+                var voteEntry = new VoteEntry();
+                voteEntry.counter1(entry.PrabowoHattaVotes);
+                voteEntry.counter2(entry.JokowiKallaVotes);
+                voteEntry.counter1Percentage(parseFloat(entry.PrabowoHattaPercentage).toFixed(2) + "%");
+                voteEntry.counter2Percentage(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
+                voteEntry.total(entry.Total);
+                voteEntry.label(datetime);
+
+                self.voteEntries.push(voteEntry);
             });
         };
 
-        this.query("KPU-Feeds-" + datetime + "-total.json", null, totalCallback);
+        this.query("KPU-Feeds-" + datetime + "-total.json", datetime, totalCallback);
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
