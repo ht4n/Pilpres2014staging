@@ -34,7 +34,8 @@ var Pilpres2014 = (function () {
                 return;
             }
 
-            data.forEach(function (entry) {
+            var dataJson = JSON.parse(data);
+            dataJson.forEach(function (entry) {
                 self.historicalFeeds.push(entry);
             });
         });
@@ -116,7 +117,7 @@ var Pilpres2014 = (function () {
         $.ajax({
             type: 'GET',
             url: url,
-            dataType: 'json',
+            dataType: 'text',
             contentType: 'application/json',
             context: context,
             statusCode: statusCallback
