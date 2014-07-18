@@ -115,7 +115,7 @@ var Pilpres2014 = (function () {
                 voteEntry.totalVotes2(entry.JokowiKallaVotes);
                 voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2) + "%");
                 voteEntry.total(entry.Total);
-                voteEntry.label(datetime);
+                voteEntry.label(context);
 
                 self.voteEntries.push(voteEntry);
             });
