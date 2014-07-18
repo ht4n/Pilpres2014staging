@@ -15,6 +15,7 @@ var VoteEntry = (function () {
 var Pilpres2014 = (function () {
     function Pilpres2014() {
         var _this = this;
+        var self = this;
         this.url = ko.observable("https://github.com/ht4n/Pilpres2014");
         this.provinces = ko.observableArray([]);
         this.totalVotes1 = ko.observable(0);
@@ -26,13 +27,17 @@ var Pilpres2014 = (function () {
         this.showProvinceDetails = ko.observable(false);
 
         var baseFeedUrl = "https://github.com/ht4n/Pilpres2014/blob/master/KPU-Feeds-";
-        this.historicalFeeds = ko.observableArray([
-            { "datetime": "2014-07-17-03-AM", "url": baseFeedUrl },
-            { "datetime": "2014-07-17-04-AM", "url": baseFeedUrl },
-            { "datetime": "2014-07-17-08-AM", "url": baseFeedUrl },
-            { "datetime": "2014-07-17-09-AM", "url": baseFeedUrl },
-            { "datetime": "2014-07-17-09-PM", "url": baseFeedUrl }
-        ]);
+        this.historicalFeeds = ko.observableArray([]);
+        this.query("feedsources.json", null, function (data, status) {
+            console.log("response:" + status);
+            if (status !== "success") {
+                return;
+            }
+
+            data.forEach(function (entry) {
+                self.historicalFeeds.push(entry);
+            });
+        });
 
         // Sets the current feed (latest) one
         var historicalFeedsLength = this.historicalFeeds().length;
@@ -111,7 +116,7 @@ var Pilpres2014 = (function () {
         $.ajax({
             type: 'GET',
             url: url,
-            dataType: 'text',
+            dataType: 'json',
             contentType: 'application/json',
             context: context,
             statusCode: statusCallback
