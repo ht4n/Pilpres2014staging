@@ -120,21 +120,21 @@ var Pilpres2014 = (function () {
 
                 self.voteEntries.push(voteEntry);
             });
+
+            if (this.voteEntries().length > 0) {
+                var firstEntry = this.voteEntries()[0];
+
+                this.percentageVotes1(firstEntry.percentageVotes1());
+                this.percentageVotes2(firstEntry.percentageVotes2());
+                this.totalVotes1(firstEntry.totalVotes1());
+                this.totalVotes2(firstEntry.totalVotes2());
+                this.totalVotes(firstEntry.total());
+            }
         };
 
         this.historicalFeeds().forEach(function (value) {
             _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, totalCallback);
         });
-
-        if (this.voteEntries().length > 0) {
-            var firstEntry = this.voteEntries()[0];
-
-            this.percentageVotes1(firstEntry.percentageVotes1());
-            this.percentageVotes2(firstEntry.percentageVotes2());
-            this.totalVotes1(firstEntry.totalVotes1());
-            this.totalVotes2(firstEntry.totalVotes2());
-            this.totalVotes(firstEntry.total());
-        }
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
