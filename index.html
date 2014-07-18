@@ -27,22 +27,24 @@
         </thead>
         <tbody>
             <!-- ko foreach:voteEntries -->
-            <!-- ko if:$index() < 5 -->
+            <!-- ko if:$index() < 10 -->
             <tr>
                 <td colspan="2"><span data-bind="text:label"></span></td>
             </tr>
             <tr>
                 <td>
-                    <span class="score" data-bind="text:percentageVotes1"></span>
+                    <span data-bind="text:percentageVotes1,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
                 <td>
-                    <span class="score" data-bind="text:percentageVotes2"></span>
+                    <span data-bind="text:percentageVotes2,css:{bigScore:$index()==0, smallScore:$index()>0}"></span>
                 </td>
             </tr>
+            <!-- ko if:$index() > 0 -->
             <tr>
                 <td><span data-bind="text:totalVotes1"></span></td>
                 <td><span data-bind="text:totalVotes2"></span></td>
             </tr>
+            <!-- /ko -->
             <tr>
                 <td colspan="2">
                     <div class="blackSeparator"></div>

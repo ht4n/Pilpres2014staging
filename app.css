@@ -27,6 +27,10 @@ table tbody {
     font-size: 40px;
 }
 
+.smallScore {
+    font-size: 20px;
+}
+
 .candidate1 {
     background: red;
     color: white;
