@@ -14,6 +14,7 @@ var VoteEntry = (function () {
 
 var Pilpres2014 = (function () {
     function Pilpres2014() {
+        var _this = this;
         this.url = ko.observable("https://github.com/ht4n/Pilpres2014");
         this.provinces = ko.observableArray([]);
         this.totalVotes1 = ko.observable(0);
@@ -37,6 +38,9 @@ var Pilpres2014 = (function () {
         var historicalFeedsLength = this.historicalFeeds().length;
         var currentFeedItem = this.historicalFeeds()[historicalFeedsLength - 1];
         this.selectedDataFeed = ko.observable(currentFeedItem);
+        this.selectedDataFeed.subscribe(function (value) {
+            _this.refresh(value.datetime);
+        });
 
         this.toggleProvinceText = ko.observable("Show votes by province");
 
@@ -57,15 +61,15 @@ var Pilpres2014 = (function () {
 
             var self = this;
             var provinceCallback = function (data, status) {
-            console.log("response:" + status);
-            if (status !== "success") {
-                return;
-            }
+                console.log("response:" + status);
+                if (status !== "success") {
+                    return;
+                }
 
-            var dataJson = JSON.parse(data);
+                var dataJson = JSON.parse(data);
                 self.voteEntries.removeAll();
-            dataJson.forEach(function (entry) {
-                var voteEntry = new VoteEntry();
+                dataJson.forEach(function (entry) {
+                    var voteEntry = new VoteEntry();
                     voteEntry.counter1(entry.PrabowoHattaVotes);
                     voteEntry.counter1Percentage(parseFloat(entry.PrabowoHattaPercentage).toFixed(2));
                     voteEntry.counter2(entry.PrabowoHattaVotes);
@@ -74,8 +78,8 @@ var Pilpres2014 = (function () {
                     voteEntry.label(entry.Province);
 
                     self.voteEntries.push(voteEntry);
-            });
-        };
+                });
+            };
 
             this.query("KPU-Feeds-" + this.selectedDataFeed().datetime + "-province.json", null, provinceCallback);
         }

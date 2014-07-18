@@ -49,11 +49,9 @@
     <hr/>    
     <h3>Historical Data:</h3>
 
-    <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
-
     <!-- ko with:selectedDataFeed -->
     <div>
-        <a href="#" data-bind="click:$root.updateVoteByDate,text:datetime"></a><span class="caption">&nbsp;PST</span>
+        <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
         <a data-bind="attr:{href:url + datetime + '.csv'}">complete</a>
         |
         <a data-bind="attr:{href:url + datetime + '-total.json'}">national</a>
@@ -91,7 +89,7 @@
             </tr>
             <!-- /ko -->
         </tbody>
-    </table>    
+    </table>
     <!-- /ko -->
 </body>
 </html>
