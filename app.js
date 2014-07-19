@@ -66,7 +66,6 @@ var Pilpres2014 = (function () {
     };
 
     Pilpres2014.prototype.toggleHistoricalData = function () {
-        var _this = this;
         if (this.showHistoricalData()) {
             this.showHistoricalData(false);
             this.toggleHistoricalText("Show last 24 hrs");
@@ -103,14 +102,11 @@ var Pilpres2014 = (function () {
                 ;
             };
 
-            var count = 0;
-            this.historicalFeeds().forEach(function (value) {
-                _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
-                ++count;
-                if (count > 12) {
-                    return;
-                }
-            });
+            for (var i = 0; i < this.historicalFeeds().length && i < 12; ++i) {
+                var value = this.historicalFeeds()[i];
+                this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
+            }
+            ;
         }
     };
 
