@@ -5,33 +5,33 @@
     <style type="text/css">
 
 svg {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 rect.background {
-  fill: none;
-  pointer-events: all;
+    fill: none;
+    pointer-events: all;
 }
 
 .axis {
-  shape-rendering: crispEdges;
+    shape-rendering: crispEdges;
 }
 
 .axis path, .axis line {
-  fill: none;
-  stroke: #000;
-  stroke-width: .5px;
+    fill: none;
+    stroke: #000;
+    stroke-width: .5px;
 }
 
     </style>
     <style>
 body {
-  font: 300 36px "Helvetica Neue";
-  height: 640px;
-  margin: 80px 160px 80px 160px;
-  overflow: hidden;
-  position: relative;
-  width: 960px;
+    font: 300 36px "Helvetica Neue";
+    height: 640px;
+    margin: 80px 160px 80px 160px;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
 }
 
 a:link, a:visited {
@@ -168,7 +168,7 @@ svg.append("svg:g")
   .append("svg:line")
     .attr("y1", "100%");
 
-d3.json("pilpres2014.json", function(root) {
+d3.json("flare.json", function(root) {
   hierarchy.nodes(root);
   x.domain([0, root.value]).nice();
   down(root, 0);
