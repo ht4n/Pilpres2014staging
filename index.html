@@ -54,11 +54,22 @@
             </tr>
         </tbody>
     </table>
+<<<<<<< HEAD
 
     <table class="scoreTable">
         <tbody>
             <!-- ko foreach:voteEntries -->
             <!-- ko if:$index() > 0 && $index() < 10 -->
+=======
+    <hr />
+    <div class="section">Last 24 Hours:</div>
+    <a href="#" data-bind="click:toggleHistoricalData,text:toggleHistoricalText">Show Details</a>
+    <hr />
+    <!-- ko if:showProvinceDetails -->
+    <table class="scoreTable">
+        <tbody>
+            <!-- ko foreach:voteEntries -->
+>>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
             <tr>
                 <td>
                     <span class="caption" data-bind="text:percentageVotes1,attr:{class:status1()}"></span>
@@ -69,7 +80,10 @@
                 </td>
             </tr>
             <!-- /ko -->
+<<<<<<< HEAD
             <!-- /ko -->
+=======
+>>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
         </tbody>
     </table>
     <hr/>
