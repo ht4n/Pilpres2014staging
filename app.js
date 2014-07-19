@@ -82,7 +82,7 @@ var Pilpres2014 = (function () {
 
                 var dataJson = JSON.parse(data);
 
-                for (var i = 0; i < dataJson.length && i < 12; ++i) {
+                for (var i = 0; i < dataJson.length; ++i) {
                     var entry = dataJson[i];
 
                     var context = this;
@@ -103,8 +103,13 @@ var Pilpres2014 = (function () {
                 ;
             };
 
+            var count = 0;
             this.historicalFeeds().forEach(function (value) {
                 _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
+                ++count;
+                if (count > 12) {
+                    return;
+                }
             });
         }
     };
