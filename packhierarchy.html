@@ -1,12 +1,51 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Pilpres 2014 Visualization</title>
-    <link rel="stylesheet" type="text/css" href="http://mbostock.github.io/d3/talk/20111116/style.css">
-</head>
-<body>
-<script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111116/d3/d3.js"></script>
-<script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111116/d3/d3.layout.js"></script>
-<script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="packhierarcy.css"/>
+    <style type="text/css">
+
+text {
+  font-size: 11px;
+  pointer-events: none;
+}
+
+text.parent {
+  fill: #1f77b4;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #999;
+  pointer-events: all;
+}
+
+circle.parent {
+  fill: #1f77b4;
+  fill-opacity: .1;
+  stroke: steelblue;
+}
+
+circle.parent:hover {
+  stroke: #ff7f0e;
+  stroke-width: .5px;
+}
+
+circle.child {
+  pointer-events: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>
+      Pilpres2014 Visualization<br>
+      circle packing
+    </h2>
+    <script type="text/javascript" src="d3.js"></script>
+    <script type="text/javascript" src="d3.layout.js"></script>
+    <script type="text/javascript">
+
 var w = 1280,
     h = 800,
     r = 720,
@@ -75,6 +114,7 @@ function zoom(d, i) {
   d3.event.stopPropagation();
 }
 
-</script>
-</body>
+    </script>
+  </body>
 </html>
+
