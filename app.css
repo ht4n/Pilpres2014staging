@@ -77,3 +77,9 @@ a {
     height:4px;
     background:black;
 }
+
+.footer {
+    font-size:11px;
+    margin:4px;
+    padding:4px;
+}
