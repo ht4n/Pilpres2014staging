@@ -21,19 +21,17 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=851956344818547&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-
-    !function(d,s,id) {
-        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location) ? 'http' : 'https';
-        if(!d.getElementById(id)){
-            js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js,fjs);
-        }
-    }(document, 'script', 'twitter-wjs');
     </script>
     
     <div class="pageTitle">Pilpres 2014 - DA1 Count</div>
     <hr/>
-    
+    <!-- FB-like and Twitter tweets -->
+    <div class="fb-like" data-href="http://www.pilpres2014.org" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="HonestDemocracy" data-hashtags="Pilpres2014">Tweet</a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+    </div>
+    <hr />    
     <div><span class="caption">Last Updated: </span><span class="caption" data-bind="text:lastUpdatedTime"></span><span class="caption"> PST</span></div>    
     <table class="scoreTable">
         <thead>
@@ -81,9 +79,6 @@
             <!-- /ko -->
         </tbody>
     </table>
-    <hr/>
-    <div class="fb-like" data-href="http://www.pilpres2014.org" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-    <a href="https://twitter.com/intent/tweet?button_hashtag=Pilpres2014" class="twitter-hashtag-button" data-related="HonestDemocracy" data-url="http://www.pilpres2014.org">Tweet #Pilpres2014</a>
     <hr/>
     <div class="section">Data Visualization:</div>
     <a class="caption" href="bubleviz.html">Bubble Dynamic Pack</a>
