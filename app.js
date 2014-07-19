@@ -30,10 +30,7 @@ var Pilpres2014 = (function () {
         this.voteEntries = ko.observableArray([]);
         this.provinceVoteEntries = ko.observableArray([]);
         this.showProvinceDetails = ko.observable(false);
-<<<<<<< HEAD
-=======
         this.showHistoricalData = ko.observable(false);
->>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
 
         this.baseFeedUrl = "https://github.com/ht4n/Pilpres2014Portal/blob/master/KPU-Feeds-";
         this.historicalFeeds = ko.observableArray([]);
@@ -60,10 +57,7 @@ var Pilpres2014 = (function () {
             _this.refresh(_this.selectedDataFeed().datetime);
         });
 
-<<<<<<< HEAD
-=======
         this.toggleHistoricalText = ko.observable("Show Last 24 hrs");
->>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
         this.toggleProvinceText = ko.observable("Show votes by province");
     }
     Pilpres2014.prototype.updateVoteByDate = function (data, event) {
@@ -71,8 +65,6 @@ var Pilpres2014 = (function () {
         vm.$root.refresh(data.datetime);
     };
 
-<<<<<<< HEAD
-=======
     Pilpres2014.prototype.toggleHistoricalData = function () {
         var _this = this;
         if (this.showHistoricalData()) {
@@ -117,7 +109,6 @@ var Pilpres2014 = (function () {
         }
     };
 
->>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
     Pilpres2014.prototype.toggleProvinceDetails = function () {
         if (this.showProvinceDetails()) {
             this.showProvinceDetails(false);
@@ -153,10 +144,6 @@ var Pilpres2014 = (function () {
     };
 
     Pilpres2014.prototype.refresh = function (datetime) {
-<<<<<<< HEAD
-        var _this = this;
-=======
->>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
         var self = this;
         self.voteEntries.removeAll();
 
@@ -169,13 +156,6 @@ var Pilpres2014 = (function () {
             var dataJson = JSON.parse(data);
 
             for (var i = 0; i < dataJson.length; ++i) {
-<<<<<<< HEAD
-                if (i > 10) {
-                    break;
-                }
-
-=======
->>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
                 var entry = dataJson[i];
 
                 var context = this;
@@ -191,28 +171,6 @@ var Pilpres2014 = (function () {
                 voteEntry.total(entry.Total);
                 voteEntry.label(context);
 
-<<<<<<< HEAD
-                self.voteEntries.push(voteEntry);
-            }
-            ;
-
-            if (self.voteEntries().length > 0) {
-                var firstEntry = self.voteEntries()[0];
-
-                self.percentageVotes1(firstEntry.percentageVotes1());
-                self.percentageVotes2(firstEntry.percentageVotes2());
-                self.totalVotes1(firstEntry.totalVotes1());
-                self.totalVotes2(firstEntry.totalVotes2());
-                self.totalVotes(firstEntry.total());
-                self.status1("bigScore " + firstEntry.status1());
-                self.status2("bigScore " + firstEntry.status2());
-            }
-        };
-
-        this.historicalFeeds().forEach(function (value) {
-            _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, totalCallback);
-        });
-=======
                 self.percentageVotes1(voteEntry.percentageVotes1());
                 self.percentageVotes2(voteEntry.percentageVotes2());
                 self.totalVotes1(voteEntry.totalVotes1());
@@ -226,7 +184,6 @@ var Pilpres2014 = (function () {
         };
 
         this.query("KPU-Feeds-" + this.lastUpdatedTime() + "-total.json", this.lastUpdatedTime(), totalCallback);
->>>>>>> ade50c67c2e6e3ba325286eb139c457bd833614c
     };
 
     Pilpres2014.prototype.query = function (url, context, callback, statusCallback) {
