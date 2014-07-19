@@ -39,7 +39,7 @@ var diameter = 960,
     .append("g")
     .attr("transform", "translate(2,2)");
 
-    d3.json("flare.json", function(error, root) {
+    d3.json("pilpres2014.json", function(error, root) {
             var node = svg.datum(root).selectAll(".node")
             .data(pack.nodes)
             .enter().append("g")
