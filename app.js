@@ -104,7 +104,7 @@ var Pilpres2014 = (function () {
             };
 
             this.historicalFeeds().forEach(function (value) {
-                _this.query("KPU-Feeds-" + value.datetime + "-province.json", null, historicalDataCallback);
+                _this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
             });
         }
     };
