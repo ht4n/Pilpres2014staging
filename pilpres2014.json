@@ -1,0 +1,2531 @@
+{
+    "name":"Pilpres2014",
+    "children": [
+        {
+            "name":"@prabowo08",
+            "children": [
+                {
+                    "name":"ACEH",
+                    "children": [
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"TRUMON TIMUR", "size":"0" },
+                                { "name":"KLUET TENGAH", "size":"0" },
+                                { "name":"KOTA BAHAGIA", "size":"1172" },
+                                { "name":"BAKONGAN", "size":"0" },
+                                { "name":"LABUHAN HAJI TIMUR", "size":"0" },
+                                { "name":"LABUHAN HAJI BARAT", "size":"3584" },
+                                { "name":"BAKONGAN TIMUR", "size":"1027" },
+                                { "name":"KLUET TIMUR", "size":"2552" },
+                                { "name":"SAMADUA", "size":"6333" },
+                                { "name":"SAWANG", "size":"4676" },
+                                { "name":"MEUKEK", "size":"5016" },
+                                { "name":"TAPAKTUAN", "size":"7752" },
+                                { "name":"KLUET UTARA", "size":"5194" },
+                                { "name":"PASIE RAJA", "size":"3470" },
+                                { "name":"TRUMON", "size":"950" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"TANOH ALAS", "size":"1398" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"KLUET SELATAN", "size":"2779" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"DELENG POKHKISEN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"LABUHAN HAJI", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"LAWE ALAS", "size":"7473" },
+                                { "name":"SEMADAM", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"TRUMON TENGAH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"LAWE BULAN", "size":"6165" },
+                                { "name":"LAWE SUMUR", "size":"0" },
+                                { "name":"BABUL RAHMAH", "size":"0" },
+                                { "name":"KETAMBE", "size":"3705" },
+                                { "name":"BUKIT TUSAM", "size":"0" },
+                                { "name":"DARUL HASANAH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"BANDA ALAM", "size":"960" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"BAMBEL", "size":"7774" },
+                                { "name":"BABUL MAKMUR", "size":"0" },
+                                { "name":"BABUSSALAM", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"DARUL AMAN", "size":"2354" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"BADAR", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"DARUL IHSAN", "size":"1155" },
+                                { "name":"PEUDAWA", "size":"1637" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"LEUSER", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"INDRA MAKMU", "size":"4063" },
+                                { "name":"MADAT", "size":"3393" },
+                                { "name":"IDI TUNONG", "size":"1746" },
+                                { "name":"PEUREULAK TIMUR", "size":"1391" },
+                                { "name":"SUNGAI RAYA", "size":"1477" },
+                                { "name":"IDI RAYEUK", "size":"5577" },
+                                { "name":"DARUL FALAH", "size":"442" },
+                                { "name":"SERBAJADI", "size":"1893" },
+                                { "name":"PEUREULAK", "size":"4870" },
+                                { "name":"PEUREULAK BARAT", "size":"2282" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"LINGE", "size":"2239" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"SIMPANG JERNIH", "size":"1300" },
+                                { "name":"RANTAU SELAMAT", "size":"1835" },
+                                { "name":"SIMPANG ULIM", "size":"2492" },
+                                { "name":"IDI TIMUR", "size":"824" },
+                                { "name":"JULOK", "size":"3589" },
+                                { "name":"PANTE BIDARI", "size":"2626" },
+                                { "name":"RANTAU PEUREULAK", "size":"5339" },
+                                { "name":"PEUNARON", "size":"2315" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"CELALA", "size":"1747" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"NURUSSALAM", "size":"2570" },
+                                { "name":"BIREM BAYEUN", "size":"8471" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"PEGASING", "size":"3528" },
+                                { "name":"KEBAYAKAN", "size":"3047" },
+                                { "name":"RUSIP ANTARA", "size":"1525" },
+                                { "name":"BIES", "size":"1865" },
+                                { "name":"LAUT TAWAR", "size":"3987" },
+                                { "name":"KETOL", "size":"3311" },
+                                { "name":"ATU LINTANG", "size":"1972" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"WOYLA BARAT", "size":"2425" },
+                                { "name":"PANTE CEUREUMEN", "size":"3245" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"KUTE PANANG", "size":"1463" },
+                                { "name":"JAGONG JEGET", "size":"3274" },
+                                { "name":"SILIH NARA", "size":"4403" },
+                                { "name":"BEBESEN", "size":"6936" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"SUNGAI MAS", "size":"1218" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"BINTANG", "size":"1225" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"KUTA MALAKA", "size":"2158" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"JOHAN PAHWALAN", "size":"13649" },
+                                { "name":"ARONGAN LAMBALEK", "size":"2261" },
+                                { "name":"BUBON", "size":"1732" },
+                                { "name":"WOYLA TIMUR", "size":"1345" },
+                                { "name":"MEUREUBO", "size":"5705" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"DARUL KAMAL", "size":"1819" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"WOYLA", "size":"4000" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"KOTA JANTHO", "size":"1967" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"KAWAY XVI", "size":"5921" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"MONTASIK", "size":"6373" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"SAMATIGA", "size":"3904" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"KUTA BARO", "size":"6132" },
+                                { "name":"LEUPUNG", "size":"631" },
+                                { "name":"LHOONG", "size":"2779" },
+                                { "name":"INDRAPURI", "size":"6377" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"PANTON REU", "size":"1930" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"SIMPANG TIGA", "size":"1857" },
+                                { "name":"KOTA COT GLIE", "size":"3272" },
+                                { "name":"LHOKNGA", "size":"4580" },
+                                { "name":"SUKAMAKMUR", "size":"4189" },
+                                { "name":"PULO ACEH", "size":"1127" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"TANGSE", "size":"5198" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"BLANG BINTANG", "size":"3053" },
+                                { "name":"SEULIMEUM", "size":"4693" },
+                                { "name":"BAITUSSALAM", "size":"3779" },
+                                { "name":"PEUKAN BADA", "size":"3778" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"GLUMPANG BARO", "size":"1565" },
+                                { "name":"MANE", "size":"976" },
+                                { "name":"PEUKAN BARO", "size":"0" },
+                                { "name":"KEUMALA", "size":"1032" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"DARUSSALAM", "size":"5537" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"BATEE", "size":"0" },
+                                { "name":"PADANG TIJI", "size":"4002" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"INGIN JAYA", "size":"8026" },
+                                { "name":"MESJID RAYA", "size":"3001" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"DELIMA", "size":"0" },
+                                { "name":"GEULUMPANG TIGA", "size":"0" },
+                                { "name":"TITEUE", "size":"1110" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"DARUL IMARAH", "size":"11484" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"SIMPANG TIGA", "size":"4660" },
+                                { "name":"SAKTI", "size":"0" },
+                                { "name":"MUARA TIGA", "size":"4865" },
+                                { "name":"KOTA SIGLI", "size":"3518" },
+                                { "name":"PIDIE", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"COT GIREK", "size":"6352" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"MILA", "size":"1760" },
+                                { "name":"MUTIARA TIMUR", "size":"4938" },
+                                { "name":"MUTIARA", "size":"3270" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"BAKTIYA", "size":"7176" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"KEMBANG TANJONG", "size":"3411" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"PAYA BAKONG", "size":"2984" },
+                                { "name":"BANDA BARO", "size":"1705" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"GEUMPANG", "size":"785" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"GEUREDONG PASE", "size":"1563" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"INDRA JAYA", "size":"3618" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"KUTA MAKMUR", "size":"6314" },
+                                { "name":"TANAH PASIR", "size":"1867" },
+                                { "name":"NIBONG", "size":"2514" },
+                                { "name":"MEURAH MULIA", "size":"3965" },
+                                { "name":"SAMUDERA", "size":"6294" },
+                                { "name":"PIRAK TIMUR", "size":"1775" },
+                                { "name":"NISAM", "size":"4535" },
+                                { "name":"LAPANG", "size":"1181" },
+                                { "name":"LANGKAHAN", "size":"4194" },
+                                { "name":"BAKTIYA BARAT", "size":"2948" },
+                                { "name":"LHOKSUKON", "size":"9549" },
+                                { "name":"MATANGKULI", "size":"3872" },
+                                { "name":"SIMPANG KRAMAT", "size":"2801" },
+                                { "name":"MUARA BATU", "size":"5837" },
+                                { "name":"SYAMTALIRA ARON", "size":"4374" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"TEUPAH TENGAH", "size":"0" },
+                                { "name":"SIMEULUE TIMUR", "size":"0" },
+                                { "name":"ALAPAN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"SAWANG", "size":"7866" },
+                                { "name":"DEWANTARA", "size":"8254" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"SIMEULUE TENGAH", "size":"0" },
+                                { "name":"SIMEULUE CUT", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"NISAM ANTARA", "size":"1611" },
+                                { "name":"SEUNUDDON", "size":"6338" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"TEUPAH SELATAN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"SYAMTALIRA BAYU", "size":"4800" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SINGKIL", "size":"4907" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"TANAH LUAS", "size":"6213" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"DANAU PARIS", "size":"1054" },
+                                { "name":"PULAU BANYAK", "size":"838" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"SIMEULUE BARAT", "size":"0" },
+                                { "name":"SALANG", "size":"0" },
+                                { "name":"TELUK DALAM", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SINGKIL UTARA", "size":"2008" },
+                                { "name":"KOTA BAHARU", "size":"1627" },
+                                { "name":"SIMPANG KANAN", "size":"3821" },
+                                { "name":"PULAU BANYAK BARAT", "size":"370" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"KOTA JUANG", "size":"10759" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SINGKOHOR", "size":"1795" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"TEUPAH BARAT", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"KUALA BARU", "size":"569" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"PEUSANGAN SIBLAH KRUENG", "size":"2839" },
+                                { "name":"KUALA", "size":"4215" },
+                                { "name":"PEULIMBANG", "size":"2180" },
+                                { "name":"SIMPANG MAMPLAM", "size":"4639" },
+                                { "name":"PEUSANGAN", "size":"11179" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"GUNUNG MERIAH", "size":"9059" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"SAMALANGA", "size":"6185" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SURO MAKMUR", "size":"1233" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"JEUMPA", "size":"7113" },
+                                { "name":"JANGKA", "size":"5432" },
+                                { "name":"PANDRAH", "size":"2018" },
+                                { "name":"PEUSANGAN SELATAN", "size":"3085" },
+                                { "name":"PEUDADA", "size":"5264" },
+                                { "name":"JULI", "size":"7180" },
+                                { "name":"MAKMUR", "size":"3523" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"LEMBAH SABIL", "size":"0" },
+                                { "name":"JEUMPA", "size":"2860" },
+                                { "name":"BABAH ROT", "size":"2284" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"GANDAPURA", "size":"6515" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"KUALA BATEE", "size":"3972" },
+                                { "name":"MANGGENG", "size":"3479" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"JEUNIEB", "size":"7878" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"PANTAN CUACA", "size":"714" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"KUTA BLANG", "size":"5773" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"SETIA", "size":"1239" },
+                                { "name":"BLANG PIDIE", "size":"4780" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"DABUN GELANG", "size":"1233" },
+                                { "name":"RIKIT GAIB", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"SUSOH", "size":"4895" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"INDRA JAYA", "size":"2307" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"TERANGUN", "size":"2187" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"PANGA", "size":"1458" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"TERIPE JAYA", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"JAYA", "size":"5321" },
+                                { "name":"SAMPOINIET", "size":"1453" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"BLANGJERANGO", "size":"1201" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"SETIA BAKTI", "size":"1729" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"DARUL MAKMUR", "size":"10555" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"PINING", "size":"680" },
+                                { "name":"KUTAPANJANG", "size":"1536" },
+                                { "name":"BLANGPEGAYON", "size":"1155" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"TRIPA MAKMUR", "size":"1932" },
+                                { "name":"SEUNAGAN", "size":"3480" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"PUTERI BETUNG", "size":"1259" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"MANYAK PAYED", "size":"7261" },
+                                { "name":"BANDA MULIA", "size":"3180" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"BEUTONG ATEUH BANGGALANG", "size":"308" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"BLANGKEJEREN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"TADU RAYA", "size":"3129" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"TEUNOM", "size":"3345" },
+                                { "name":"PASIE RAYA", "size":"0" },
+                                { "name":"KRUENG SABEE", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"TENGGULUN", "size":"3867" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"SUKA MAKMUE", "size":"2077" },
+                                { "name":"KUALA", "size":"4447" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"KARANG BARU", "size":"12432" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"DARUL HIKMAH", "size":"1779" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"BEUTONG", "size":"2308" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"KEJURUAN MUDA", "size":"9005" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"PERMATA", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"SEUNAGAN TIMUR", "size":"3125" },
+                                { "name":"KUALA PESISIR", "size":"4204" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"KOTA KUALASIMPANG", "size":"4391" },
+                                { "name":"BENDAHARA", "size":"5617" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"GAJAH PUTIH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"BANDAR PUSAKA", "size":"3303" },
+                                { "name":"TAMIANG HULU", "size":"5532" },
+                                { "name":"RANTAU", "size":"10874" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"BENER KELIPAH", "size":"759" },
+                                { "name":"BANDAR", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"MEURAH DUA", "size":"2344" },
+                                { "name":"BANDAR BARU", "size":"6010" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"SEKERAK", "size":"1990" },
+                                { "name":"SERUWAY", "size":"6817" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"BUKIT", "size":"0" },
+                                { "name":"TIMANG GAJAH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"JANGKA BUYA", "size":"1195" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"SYIAH UTAMA", "size":"300" },
+                                { "name":"MESIDAH", "size":"635" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"ULIM", "size":"1917" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"PINTU RIME GAYO", "size":"1965" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"KUTA ALAM", "size":"8282" },
+                                { "name":"JAYA BARU", "size":"4594" },
+                                { "name":"BAITURRAHMAN", "size":"6679" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"WIH PESAM", "size":"5304" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"MEUREUDU", "size":"3636" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"BANDA RAYA", "size":"5642" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SABANG",
+                            "children": [
+                                { "name":"SUKAJAYA", "size":"3746" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"PANTERAJA", "size":"1521" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"MUARA SATU", "size":"5999" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"BANDAR DUA", "size":"3590" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"KUTA RAJA", "size":"1716" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"BLANG MANGAT", "size":"4426" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"LUENG BATA", "size":"4387" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"TRIENGGADENG", "size":"3869" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA BARO", "size":"14232" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"SIMPANG KIRI", "size":"7966" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"MEURAXA", "size":"3215" },
+                                { "name":"ULEE KARENG", "size":"5028" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SABANG",
+                            "children": [
+                                { "name":"SUKAKARYA", "size":"3555" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"LONGKIB", "size":"1494" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"SYIAH KUALA", "size":"6280" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"MUARA DUA", "size":"9299" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA BARAT", "size":"6976" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"BANDA SAKTI", "size":"14892" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"PENANGGALAN", "size":"3299" },
+                                { "name":"SULTAN DAULAT", "size":"3649" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA KOTA", "size":"8533" },
+                                { "name":"LANGSA TIMUR", "size":"3639" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"RUNDENG", "size":"3764" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA LAMA", "size":"9313" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"BALI",
+                    "children": [
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"PEKUTATAN", "size":"5935" },
+                                { "name":"MELAYA", "size":"9342" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"PENEBEL", "size":"10863" },
+                                { "name":"BATURITI", "size":"9761" }
+                            ]
+                        },
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"NEGARA", "size":"18440" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"TABANAN", "size":"12549" }
+                            ]
+                        },
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"MENDOYO", "size":"9256" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"KEDIRI", "size":"16087" },
+                                { "name":"PUPUAN", "size":"6225" },
+                                { "name":"MARGA", "size":"8134" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"ABIANSEMAL", "size":"16355" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"SELEMADEG", "size":"2096" },
+                                { "name":"KERAMBITAN", "size":"8241" }
+                            ]
+                        },
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"JEMBRANA", "size":"10305" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"SELEMADEG TIMUR", "size":"4196" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"PETANG", "size":"6285" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"NUSA PENIDA", "size":"12150" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"SELEMADEG BARAT", "size":"4062" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"UBUD", "size":"9296" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"KLUNGKUNG", "size":"10963" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"BLAHBATUH", "size":"9542" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"KUTA SELATAN", "size":"15350" },
+                                { "name":"MENGWI", "size":"21692" },
+                                { "name":"KUTA", "size":"6269" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"BANJARANGKAN", "size":"6850" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"SUKAWATI", "size":"11333" },
+                                { "name":"TEGALALLANG", "size":"8193" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"BANGLI", "size":"9187" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"KUTA UTARA", "size":"12115" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"TAMPAKSIRING", "size":"5717" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"RENDANG", "size":"8907" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"GIANYAR", "size":"13280" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"ABANG", "size":"10958" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"PAYANGAN", "size":"6592" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"SERIRIT", "size":"14950" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"MANGGIS", "size":"6901" },
+                                { "name":"SIDEMEN", "size":"5905" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"DAWAN", "size":"5958" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"SUSUT", "size":"8102" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"SELAT", "size":"7165" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"KINTAMANI", "size":"14039" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"GEROKGAK", "size":"15376" },
+                                { "name":"TEJAKULA", "size":"4421" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"TEMBUKU", "size":"5989" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"BEBANDEM", "size":"10830" },
+                                { "name":"KARANGASEM", "size":"17124" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA DENPASAR",
+                            "children": [
+                                { "name":"DENPASAR BARAT", "size":"26363" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"BANJAR", "size":"12583" },
+                                { "name":"BUSUNG BIU", "size":"7294" },
+                                { "name":"SUKASADA", "size":"12050" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"KUBU", "size":"12970" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA DENPASAR",
+                            "children": [
+                                { "name":"DENPASAR UTARA", "size":"18503" },
+                                { "name":"DENPASAR TIMUR", "size":"12967" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"KUBUTAMBAHAN", "size":"7441" },
+                                { "name":"BULELENG", "size":"20569" },
+                                { "name":"SAWAN", "size":"8168" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"@jokowi_do2",
+            "children": [
+                {
+                    "name":"ACEH",
+                    "children": [
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"TRUMON TIMUR", "size":"0" },
+                                { "name":"KLUET TENGAH", "size":"0" },
+                                { "name":"KOTA BAHAGIA", "size":"1389" },
+                                { "name":"BAKONGAN", "size":"0" },
+                                { "name":"LABUHAN HAJI TIMUR", "size":"0" },
+                                { "name":"LABUHAN HAJI BARAT", "size":"3200" },
+                                { "name":"BAKONGAN TIMUR", "size":"1230" },
+                                { "name":"KLUET TIMUR", "size":"1689" },
+                                { "name":"SAMADUA", "size":"2476" },
+                                { "name":"SAWANG", "size":"2743" },
+                                { "name":"MEUKEK", "size":"3676" },
+                                { "name":"TAPAKTUAN", "size":"3401" },
+                                { "name":"KLUET UTARA", "size":"5108" },
+                                { "name":"PASIE RAJA", "size":"2925" },
+                                { "name":"TRUMON", "size":"1174" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"TANOH ALAS", "size":"881" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"KLUET SELATAN", "size":"3259" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"DELENG POKHKISEN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"LABUHAN HAJI", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"LAWE ALAS", "size":"2030" },
+                                { "name":"SEMADAM", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SELATAN",
+                            "children": [
+                                { "name":"TRUMON TENGAH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"LAWE BULAN", "size":"2590" },
+                                { "name":"LAWE SUMUR", "size":"0" },
+                                { "name":"BABUL RAHMAH", "size":"0" },
+                                { "name":"KETAMBE", "size":"2347" },
+                                { "name":"BUKIT TUSAM", "size":"0" },
+                                { "name":"DARUL HASANAH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"BANDA ALAM", "size":"1731" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"BAMBEL", "size":"2528" },
+                                { "name":"BABUL MAKMUR", "size":"0" },
+                                { "name":"BABUSSALAM", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"DARUL AMAN", "size":"3297" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"BADAR", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"DARUL IHSAN", "size":"1195" },
+                                { "name":"PEUDAWA", "size":"1673" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGGARA",
+                            "children": [
+                                { "name":"LEUSER", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"INDRA MAKMU", "size":"1733" },
+                                { "name":"MADAT", "size":"3941" },
+                                { "name":"IDI TUNONG", "size":"1748" },
+                                { "name":"PEUREULAK TIMUR", "size":"2678" },
+                                { "name":"SUNGAI RAYA", "size":"1872" },
+                                { "name":"IDI RAYEUK", "size":"5106" },
+                                { "name":"DARUL FALAH", "size":"1084" },
+                                { "name":"SERBAJADI", "size":"1267" },
+                                { "name":"PEUREULAK", "size":"6850" },
+                                { "name":"PEUREULAK BARAT", "size":"2048" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"LINGE", "size":"3127" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"SIMPANG JERNIH", "size":"544" },
+                                { "name":"RANTAU SELAMAT", "size":"1942" },
+                                { "name":"SIMPANG ULIM", "size":"2775" },
+                                { "name":"IDI TIMUR", "size":"1153" },
+                                { "name":"JULOK", "size":"4736" },
+                                { "name":"PANTE BIDARI", "size":"4052" },
+                                { "name":"RANTAU PEUREULAK", "size":"3238" },
+                                { "name":"PEUNARON", "size":"1801" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"CELALA", "size":"3106" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TIMUR",
+                            "children": [
+                                { "name":"NURUSSALAM", "size":"3702" },
+                                { "name":"BIREM BAYEUN", "size":"3382" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"PEGASING", "size":"6690" },
+                                { "name":"KEBAYAKAN", "size":"4750" },
+                                { "name":"RUSIP ANTARA", "size":"2194" },
+                                { "name":"BIES", "size":"2243" },
+                                { "name":"LAUT TAWAR", "size":"5035" },
+                                { "name":"KETOL", "size":"3819" },
+                                { "name":"ATU LINTANG", "size":"1413" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"WOYLA BARAT", "size":"1714" },
+                                { "name":"PANTE CEUREUMEN", "size":"2270" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"KUTE PANANG", "size":"2745" },
+                                { "name":"JAGONG JEGET", "size":"1968" },
+                                { "name":"SILIH NARA", "size":"7420" },
+                                { "name":"BEBESEN", "size":"9334" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"SUNGAI MAS", "size":"845" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TENGAH",
+                            "children": [
+                                { "name":"BINTANG", "size":"4038" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"KUTA MALAKA", "size":"1042" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"JOHAN PAHWALAN", "size":"10052" },
+                                { "name":"ARONGAN LAMBALEK", "size":"3316" },
+                                { "name":"BUBON", "size":"1800" },
+                                { "name":"WOYLA TIMUR", "size":"1281" },
+                                { "name":"MEUREUBO", "size":"5686" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"DARUL KAMAL", "size":"1599" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"WOYLA", "size":"3208" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"KOTA JANTHO", "size":"2018" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"KAWAY XVI", "size":"4506" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"MONTASIK", "size":"3074" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"SAMATIGA", "size":"4284" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"KUTA BARO", "size":"5241" },
+                                { "name":"LEUPUNG", "size":"763" },
+                                { "name":"LHOONG", "size":"2419" },
+                                { "name":"INDRAPURI", "size":"3906" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT",
+                            "children": [
+                                { "name":"PANTON REU", "size":"1100" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"SIMPANG TIGA", "size":"1176" },
+                                { "name":"KOTA COT GLIE", "size":"3379" },
+                                { "name":"LHOKNGA", "size":"3111" },
+                                { "name":"SUKAMAKMUR", "size":"3170" },
+                                { "name":"PULO ACEH", "size":"1301" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"TANGSE", "size":"6186" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"BLANG BINTANG", "size":"2148" },
+                                { "name":"SEULIMEUM", "size":"5158" },
+                                { "name":"BAITUSSALAM", "size":"3160" },
+                                { "name":"PEUKAN BADA", "size":"3662" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"GLUMPANG BARO", "size":"2941" },
+                                { "name":"MANE", "size":"1397" },
+                                { "name":"PEUKAN BARO", "size":"0" },
+                                { "name":"KEUMALA", "size":"2969" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"DARUSSALAM", "size":"3722" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"BATEE", "size":"0" },
+                                { "name":"PADANG TIJI", "size":"5167" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"INGIN JAYA", "size":"6351" },
+                                { "name":"MESJID RAYA", "size":"3257" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"DELIMA", "size":"0" },
+                                { "name":"GEULUMPANG TIGA", "size":"0" },
+                                { "name":"TITEUE", "size":"1353" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BESAR",
+                            "children": [
+                                { "name":"DARUL IMARAH", "size":"7981" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"SIMPANG TIGA", "size":"5611" },
+                                { "name":"SAKTI", "size":"0" },
+                                { "name":"MUARA TIGA", "size":"1867" },
+                                { "name":"KOTA SIGLI", "size":"3742" },
+                                { "name":"PIDIE", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"COT GIREK", "size":"2450" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"MILA", "size":"1958" },
+                                { "name":"MUTIARA TIMUR", "size":"8418" },
+                                { "name":"MUTIARA", "size":"4973" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"BAKTIYA", "size":"6433" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"KEMBANG TANJONG", "size":"5241" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"PAYA BAKONG", "size":"2449" },
+                                { "name":"BANDA BARO", "size":"695" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"GEUMPANG", "size":"1158" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"GEUREDONG PASE", "size":"533" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE",
+                            "children": [
+                                { "name":"INDRA JAYA", "size":"5734" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"KUTA MAKMUR", "size":"3703" },
+                                { "name":"TANAH PASIR", "size":"1427" },
+                                { "name":"NIBONG", "size":"1675" },
+                                { "name":"MEURAH MULIA", "size":"3782" },
+                                { "name":"SAMUDERA", "size":"3771" },
+                                { "name":"PIRAK TIMUR", "size":"1507" },
+                                { "name":"NISAM", "size":"1928" },
+                                { "name":"LAPANG", "size":"1280" },
+                                { "name":"LANGKAHAN", "size":"3819" },
+                                { "name":"BAKTIYA BARAT", "size":"3224" },
+                                { "name":"LHOKSUKON", "size":"7667" },
+                                { "name":"MATANGKULI", "size":"3445" },
+                                { "name":"SIMPANG KRAMAT", "size":"1284" },
+                                { "name":"MUARA BATU", "size":"2986" },
+                                { "name":"SYAMTALIRA ARON", "size":"3121" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"TEUPAH TENGAH", "size":"0" },
+                                { "name":"SIMEULUE TIMUR", "size":"0" },
+                                { "name":"ALAPAN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"SAWANG", "size":"3931" },
+                                { "name":"DEWANTARA", "size":"4449" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"SIMEULUE TENGAH", "size":"0" },
+                                { "name":"SIMEULUE CUT", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"NISAM ANTARA", "size":"937" },
+                                { "name":"SEUNUDDON", "size":"2800" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"TEUPAH SELATAN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"SYAMTALIRA BAYU", "size":"2801" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SINGKIL", "size":"2480" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH UTARA",
+                            "children": [
+                                { "name":"TANAH LUAS", "size":"4120" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"DANAU PARIS", "size":"1273" },
+                                { "name":"PULAU BANYAK", "size":"574" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"SIMEULUE BARAT", "size":"0" },
+                                { "name":"SALANG", "size":"0" },
+                                { "name":"TELUK DALAM", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SINGKIL UTARA", "size":"1810" },
+                                { "name":"KOTA BAHARU", "size":"1031" },
+                                { "name":"SIMPANG KANAN", "size":"2613" },
+                                { "name":"PULAU BANYAK BARAT", "size":"654" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"KOTA JUANG", "size":"5952" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SINGKOHOR", "size":"1135" }
+                            ]
+                        },
+                        {
+                            "name":"SIMEULUE",
+                            "children": [
+                                { "name":"TEUPAH BARAT", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"KUALA BARU", "size":"413" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"PEUSANGAN SIBLAH KRUENG", "size":"1838" },
+                                { "name":"KUALA", "size":"2235" },
+                                { "name":"PEULIMBANG", "size":"2342" },
+                                { "name":"SIMPANG MAMPLAM", "size":"4356" },
+                                { "name":"PEUSANGAN", "size":"7392" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"GUNUNG MERIAH", "size":"5549" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"SAMALANGA", "size":"3652" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH SINGKIL",
+                            "children": [
+                                { "name":"SURO MAKMUR", "size":"1698" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"JEUMPA", "size":"4486" },
+                                { "name":"JANGKA", "size":"4381" },
+                                { "name":"PANDRAH", "size":"1335" },
+                                { "name":"PEUSANGAN SELATAN", "size":"2060" },
+                                { "name":"PEUDADA", "size":"5031" },
+                                { "name":"JULI", "size":"4581" },
+                                { "name":"MAKMUR", "size":"2013" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"LEMBAH SABIL", "size":"0" },
+                                { "name":"JEUMPA", "size":"1536" },
+                                { "name":"BABAH ROT", "size":"3615" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"GANDAPURA", "size":"2592" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"KUALA BATEE", "size":"3536" },
+                                { "name":"MANGGENG", "size":"2648" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"JEUNIEB", "size":"3096" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"PANTAN CUACA", "size":"1561" }
+                            ]
+                        },
+                        {
+                            "name":"BIREUEN",
+                            "children": [
+                                { "name":"KUTA BLANG", "size":"2745" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"SETIA", "size":"1627" },
+                                { "name":"BLANG PIDIE", "size":"3709" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"DABUN GELANG", "size":"1499" },
+                                { "name":"RIKIT GAIB", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH BARAT DAYA",
+                            "children": [
+                                { "name":"SUSOH", "size":"5305" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"INDRA JAYA", "size":"1233" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"TERANGUN", "size":"2268" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"PANGA", "size":"1992" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"TERIPE JAYA", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"JAYA", "size":"2147" },
+                                { "name":"SAMPOINIET", "size":"1618" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"BLANGJERANGO", "size":"2483" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"SETIA BAKTI", "size":"1593" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"DARUL MAKMUR", "size":"9416" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"PINING", "size":"1444" },
+                                { "name":"KUTAPANJANG", "size":"2498" },
+                                { "name":"BLANGPEGAYON", "size":"1465" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"TRIPA MAKMUR", "size":"1612" },
+                                { "name":"SEUNAGAN", "size":"4764" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"PUTERI BETUNG", "size":"2673" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"MANYAK PAYED", "size":"4187" },
+                                { "name":"BANDA MULIA", "size":"1373" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"BEUTONG ATEUH BANGGALANG", "size":"553" }
+                            ]
+                        },
+                        {
+                            "name":"GAYO LUES",
+                            "children": [
+                                { "name":"BLANGKEJEREN", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"TADU RAYA", "size":"3235" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"TEUNOM", "size":"3199" },
+                                { "name":"PASIE RAYA", "size":"0" },
+                                { "name":"KRUENG SABEE", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"TENGGULUN", "size":"2994" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"SUKA MAKMUE", "size":"2852" },
+                                { "name":"KUALA", "size":"4269" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"KARANG BARU", "size":"5320" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH JAYA",
+                            "children": [
+                                { "name":"DARUL HIKMAH", "size":"1271" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"BEUTONG", "size":"4007" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"KEJURUAN MUDA", "size":"5757" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"PERMATA", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"NAGAN RAYA",
+                            "children": [
+                                { "name":"SEUNAGAN TIMUR", "size":"4321" },
+                                { "name":"KUALA PESISIR", "size":"3819" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"KOTA KUALASIMPANG", "size":"2982" },
+                                { "name":"BENDAHARA", "size":"2931" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"GAJAH PUTIH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"BANDAR PUSAKA", "size":"2136" },
+                                { "name":"TAMIANG HULU", "size":"2790" },
+                                { "name":"RANTAU", "size":"4766" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"BENER KELIPAH", "size":"1531" },
+                                { "name":"BANDAR", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"MEURAH DUA", "size":"2740" },
+                                { "name":"BANDAR BARU", "size":"6710" }
+                            ]
+                        },
+                        {
+                            "name":"ACEH TAMIANG",
+                            "children": [
+                                { "name":"SEKERAK", "size":"1106" },
+                                { "name":"SERUWAY", "size":"4801" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"BUKIT", "size":"0" },
+                                { "name":"TIMANG GAJAH", "size":"0" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"JANGKA BUYA", "size":"2071" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"SYIAH UTAMA", "size":"653" },
+                                { "name":"MESIDAH", "size":"1445" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"ULIM", "size":"3794" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"PINTU RIME GAYO", "size":"3742" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"KUTA ALAM", "size":"6568" },
+                                { "name":"JAYA BARU", "size":"3471" },
+                                { "name":"BAITURRAHMAN", "size":"5261" }
+                            ]
+                        },
+                        {
+                            "name":"BENER MERIAH",
+                            "children": [
+                                { "name":"WIH PESAM", "size":"5670" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"MEUREUDU", "size":"4771" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"BANDA RAYA", "size":"3709" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SABANG",
+                            "children": [
+                                { "name":"SUKAJAYA", "size":"2619" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"PANTERAJA", "size":"1300" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"MUARA SATU", "size":"3257" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"BANDAR DUA", "size":"4847" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"KUTA RAJA", "size":"1702" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"BLANG MANGAT", "size":"3013" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"LUENG BATA", "size":"3644" }
+                            ]
+                        },
+                        {
+                            "name":"PIDIE JAYA",
+                            "children": [
+                                { "name":"TRIENGGADENG", "size":"4105" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA BARO", "size":"5092" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"SIMPANG KIRI", "size":"4310" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"MEURAXA", "size":"3080" },
+                                { "name":"ULEE KARENG", "size":"3950" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SABANG",
+                            "children": [
+                                { "name":"SUKAKARYA", "size":"2918" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"LONGKIB", "size":"1039" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA BANDA ACEH",
+                            "children": [
+                                { "name":"SYIAH KUALA", "size":"4618" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"MUARA DUA", "size":"4709" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA BARAT", "size":"3235" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LHOKSEUMAWE",
+                            "children": [
+                                { "name":"BANDA SAKTI", "size":"8317" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"PENANGGALAN", "size":"2038" },
+                                { "name":"SULTAN DAULAT", "size":"2204" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA KOTA", "size":"4667" },
+                                { "name":"LANGSA TIMUR", "size":"1838" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA SUBULUSSALAM",
+                            "children": [
+                                { "name":"RUNDENG", "size":"1685" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA LANGSA",
+                            "children": [
+                                { "name":"LANGSA LAMA", "size":"3508" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"BALI",
+                    "children": [
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"PEKUTATAN", "size":"10668" },
+                                { "name":"MELAYA", "size":"19691" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"PENEBEL", "size":"22707" },
+                                { "name":"BATURITI", "size":"20496" }
+                            ]
+                        },
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"NEGARA", "size":"26407" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"TABANAN", "size":"34325" }
+                            ]
+                        },
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"MENDOYO", "size":"26555" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"KEDIRI", "size":"34102" },
+                                { "name":"PUPUAN", "size":"21677" },
+                                { "name":"MARGA", "size":"21654" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"ABIANSEMAL", "size":"40988" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"SELEMADEG", "size":"13427" },
+                                { "name":"KERAMBITAN", "size":"20049" }
+                            ]
+                        },
+                        {
+                            "name":"JEMBRANA",
+                            "children": [
+                                { "name":"JEMBRANA", "size":"21480" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"SELEMADEG TIMUR", "size":"11969" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"PETANG", "size":"12191" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"NUSA PENIDA", "size":"15767" }
+                            ]
+                        },
+                        {
+                            "name":"TABANAN",
+                            "children": [
+                                { "name":"SELEMADEG BARAT", "size":"10490" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"UBUD", "size":"33929" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"KLUNGKUNG", "size":"22422" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"BLAHBATUH", "size":"28930" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"KUTA SELATAN", "size":"32360" },
+                                { "name":"MENGWI", "size":"52545" },
+                                { "name":"KUTA", "size":"18968" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"BANJARANGKAN", "size":"16632" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"SUKAWATI", "size":"47388" },
+                                { "name":"TEGALALLANG", "size":"25905" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"BANGLI", "size":"22608" }
+                            ]
+                        },
+                        {
+                            "name":"BADUNG",
+                            "children": [
+                                { "name":"KUTA UTARA", "size":"32165" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"TAMPAKSIRING", "size":"25216" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"RENDANG", "size":"14686" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"GIANYAR", "size":"40808" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"ABANG", "size":"25620" }
+                            ]
+                        },
+                        {
+                            "name":"GIANYAR",
+                            "children": [
+                                { "name":"PAYANGAN", "size":"20949" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"SERIRIT", "size":"23685" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"MANGGIS", "size":"18169" },
+                                { "name":"SIDEMEN", "size":"16453" }
+                            ]
+                        },
+                        {
+                            "name":"KLUNGKUNG",
+                            "children": [
+                                { "name":"DAWAN", "size":"16010" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"SUSUT", "size":"20530" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"SELAT", "size":"17980" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"KINTAMANI", "size":"40783" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"GEROKGAK", "size":"26829" },
+                                { "name":"TEJAKULA", "size":"22360" }
+                            ]
+                        },
+                        {
+                            "name":"BANGLI",
+                            "children": [
+                                { "name":"TEMBUKU", "size":"18607" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"BEBANDEM", "size":"18368" },
+                                { "name":"KARANGASEM", "size":"31766" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA DENPASAR",
+                            "children": [
+                                { "name":"DENPASAR BARAT", "size":"68230" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"BANJAR", "size":"28070" },
+                                { "name":"BUSUNG BIU", "size":"17486" },
+                                { "name":"SUKASADA", "size":"24730" }
+                            ]
+                        },
+                        {
+                            "name":"KARANGASEM",
+                            "children": [
+                                { "name":"KUBU", "size":"16822" }
+                            ]
+                        },
+                        {
+                            "name":"KOTA DENPASAR",
+                            "children": [
+                                { "name":"DENPASAR UTARA", "size":"63473" },
+                                { "name":"DENPASAR TIMUR", "size":"46845" }
+                            ]
+                        },
+                        {
+                            "name":"BULELENG",
+                            "children": [
+                                { "name":"KUBUTAMBAHAN", "size":"19231" },
+                                { "name":"BULELENG", "size":"45577" },
+                                { "name":"SAWAN", "size":"24260" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
