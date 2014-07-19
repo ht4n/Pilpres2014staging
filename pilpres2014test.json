@@ -1,0 +1,24 @@
+{
+    "name":"Pilpres2014",
+    "children": [
+        {
+            "name":"@prabowo08",
+            "children": [
+                { "name":"ACEH", "size":939088 },
+                { "name":"BALI", "size":614241 },
+                { "name":"BANTEN", "size":3192671 },
+                { "name":"BENGKULU", "size":433173 },
+                { "name":"DAERAH ISTIMEWA YOGYAKARTA", "size":977342 }
+            ]
+        },
+        {
+            "name":"@jokowi_do2",
+            "children": [
+                { "name":"ACEH", "size":750767 },
+                { "name":"BALI", "size":1535110 },
+                { "name":"BANTEN", "size":2398631 },
+                { "name":"BENGKULU", "size":523669 }
+            ]
+        }
+    ]
+}

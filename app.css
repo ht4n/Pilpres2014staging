@@ -1,0 +1,88 @@
+﻿body {
+    font-family: 'tahoma', 'Segoe UI', sans-serif;
+}
+
+span {
+    font-size: 18px;
+}
+
+table tbody {
+    text-align: center;
+}
+
+.scoreTable {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+
+.pageTitle {
+    background: #2A0438;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.section {
+    background: #2A0438;
+    color: white;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.bigScore {
+    font-size: 40px;
+}
+
+.smallScore {
+    font-size: 11px;
+}
+
+.candidate1 {
+    background: red;
+    color: white;
+}
+
+.neural {
+    background:#1371c1
+}
+
+.candidate2 {
+    background: black;
+    color: white;
+}
+
+.win {
+    background:#b0ffaa;
+}
+
+.lose {
+    background:#ffdfdf;
+}
+
+.caption {
+    font-size:12px;
+}
+
+a {
+    font-size:12px;
+}
+
+.redSeparator {
+    height:4px;
+    background:red;
+}
+
+.blackSeparator {
+    height:4px;
+    background:black;
+}
+
+.footer {
+    font-size:11px;
+}
+
+.paragraph {
+    padding-top:2px;
+    padding-bottom:2px;
+}

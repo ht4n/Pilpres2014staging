@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pilpres2014 Watchdogs for Honest Democracy</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/knockout-3.1.0.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=851956344818547&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="pageTitle">Pilpres 2014 - DA1 Count</div>
+    <hr/>    
+    <div><span class="caption">Last Updated: </span><span class="caption" data-bind="text:lastUpdatedTime"></span><span class="caption"> PST</span></div>    
+    <table class="scoreTable">
+        <thead>
+            <tr>
+                <th style="width:50%" class="candidate1">@Prabowo08</th>
+                <th class="candidate2">@Jokowi_do2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span data-bind="text:percentageVotes1,attr:{class:status1()}"></span>
+                </td>
+                <td>
+                    <span data-bind="text:percentageVotes2,attr:{class:status2()}"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span data-bind="text:totalVotes1"></span></td>
+                <td><span data-bind="text:totalVotes2"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="redSeparator"></div>
+                    <div class="blackSeparator"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+    <div class="section">Last 24 Hours:</div>
+    <a href="#" data-bind="click:toggleHistoricalData,text:toggleHistoricalText">Show Details</a>
+    <hr />
+    <!-- ko if:showProvinceDetails -->
+    <table class="scoreTable">
+        <tbody>
+            <!-- ko foreach:voteEntries -->
+            <tr>
+                <td>
+                    <span class="caption" data-bind="text:percentageVotes1,attr:{class:status1()}"></span>
+                </td>
+                <td><span class="caption" data-bind="text:label"></span></td>
+                <td>
+                    <span class="caption" data-bind="text:percentageVotes2,attr:{class:status2()}"></span>
+                </td>
+            </tr>
+            <!-- /ko -->
+        </tbody>
+    </table>
+    <hr/>
+    <!-- FB-like and Twitter tweets -->
+    <table align="center">
+        <tr>
+            <td>
+                <div class="fb-like" data-href="http://www.pilpres2014.org" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="true"></div>
+            </td>
+            <td>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="HonestDemocracy" data-hashtags="Pilpres2014">Tweet</a>
+                <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+            </td>
+            <td>
+                <a href="https://twitter.com/honestdemocracy" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @HonestDemocracy</a>
+                <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+            </td>
+        </tr>
+    </table>
+    <hr />    
+    <div class="section">Data Visualization:</div>
+    <a class="caption" href="bubleviz.html">Dynamic Pack</a>
+    |
+    <a class="caption" href="packhierarchy.html">Blue Pack</a>
+    |
+    <a class="caption" href="bublevisstatic.html">Static Pack</a>
+    |
+    <a class="caption" href="vizindex.html">Difference</a>
+    |
+    <a class="caption" href="barhierarchy.html">iHBar</a>
+    |    
+    <a class="caption" href="deepbarhierarchy.html">MidLevel iHBar (Kabupaten)</a>
+    |
+    <a class="caption" href="deepbarhierarchy.html">Deep iHBar (Warning:2MBytes)</a>
+    <hr/>    
+    <div class="section">Downloads Historical Data:</div>
+    <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
+    <!-- ko with:selectedDataFeed -->
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '.csv'}">complete</a>
+    |
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-total.json'}">national</a>
+    |
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-province.json'}">province</a>
+    |
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.json'}">kabupaten</a>
+    <!-- /ko -->
+    
+    <hr />   
+    <div class="section">Provincial Votes:</div>
+    <a href="#" data-bind="click:toggleProvinceDetails,text:toggleProvinceText">Show Details</a>
+    <hr />
+    <!-- ko if:showProvinceDetails -->
+    <table>
+        <thead>
+            <tr>
+                <th>Province</th>
+                <th>Prabowo-Hatta(%)</th>
+                <th>Jokowi-Kalla(%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ko foreach:provinceVoteEntries -->
+            <tr>
+                <td><span data-bind="text:label"></span></td>
+                <td><span data-bind="text:percentageVotes1,css:{win:percentageVotes1() > 50.0,lose:percentageVotes1() < 50.0}"></span></td>
+                <td><span data-bind="text:percentageVotes2,css:{win:percentageVotes2() > 50.0,lose:percentageVotes2() < 50.0}"></span></td>
+            </tr>
+            <!-- /ko -->
+        </tbody>
+    </table>
+    <!-- /ko -->
+
+    <div>
+        <span class="footer">
+            The data is obtained by automatic crawling http://pilpres2014.kpu.go.id periodically and updated every 6-12 hours.
+            This website is not an official KPU website and although the numbers are automatically crawled from pilpres2014.kpu.go.id you should not treat this as official numbers.
+
+            DA1 data that is sent from the District is a result that has been decided on its level and not at the national level and not the final results because the data may change according
+            to the results of a plenary meeting on the level above or at the level of the central plenum.
+
+            The motivation for this website is to make the #pilpres2014 data available to public as quick as possible with the widest possible reach and so that the world can be the Watchdogs 
+            for an honest, clean, respectable and integral democracy process.
+
+            <b>DISCLAIMER</b>: the development of this site is a personal initiative and it is not affiliated with any companies or organizations. It is for the integral democracy process of the people
+            for the people and by the people.
+        </span>
+    </div>
+    <div class="paragraph">
+        <span class="footer">This site is built on top of <a href="http://azure.microsoft.com/">Windows Azure</a> cloud technology and many open source technologies such as <a href="http://knockoutjs.com">KnockoutJS</a>, 
+        <a href="http://jquery.com">JQuery</a>, <a href="http://microsoft.com/net">.NET Framework</a>, <a href="http://typescriptlang.org/">Microsoft Typescript</a>, HTML5, <a href="http://github.com">GitHub</a>, <a href="http://visualstudio.com/">Visual Studio 2013</a>, <a href="http://d3js.org">D3 Visualization</a></span>
+    </div>
+    <div class="paragraph">
+        <span class="footer">The source-code is shared in <a href="https://github.com/ht4n/Pilpres2014">Pilpres2014 GitHub</a> under APACHE 2.0 license.</span>
+    </div>
+    <div class="paragraph"><span class="footer">Data Source: <a href="http://pilpres2014.kpu.go.id/da1.php">Formulir DA1 - pilpres2014.KPU.go.id</a></span></div>
+    <hr />
+    <div class="paragraph">
+        <span class="footer">Development Team Leader: <a href="http://ht4n.blogspot.com">Henry Tan Setiawan</a></span>
+        <span class="footer">Contact Us: <a href="mailto:pilpres2014@outlook.com">e-mail</a></span>
+    </div>
+</body>
+</html>
