@@ -93,9 +93,13 @@
     </table>
     <!-- /ko -->
     <hr/>
-   
-    <div class="section">Data Visualization:</div>
-    <iframe src="vizindex.html" height="600" scrolling="no" style="overflow: hidden;-webkit-transform:scale(0.8);"></iframe>
+    <div class="section">Charts:</div>
+    <a href="#" data-bind="click:toggleChart,text:toggleChartText"></a>
+    <!-- ko if:expandChart -->
+    <iframe src="vizindex.html" height="600" scrolling="no" style="overflow: hidden;"></iframe>
+    <!-- /ko -->
+    <hr/>
+    <div class="section">Data Visualization:</div>    
     <a class="caption" href="bubleviz.html">Dynamic Pack</a>
     |
     <a class="caption" href="packhierarchy.html">Blue Pack</a>
@@ -111,7 +115,7 @@
     <a class="caption" href="deepbarhierarchy.html">Deep iHBar (Warning:2MBytes)</a>
     <hr/>
     <div class="section">Provincial Votes:</div>
-    <a href="#" data-bind="click:toggleProvinceDetails,text:toggleProvinceText">Show Details</a>
+    <a href="#" data-bind="click:toggleProvinceDetails,text:toggleProvinceText"></a>
     <hr />
     <!-- ko if:showProvinceDetails -->
     <table>
