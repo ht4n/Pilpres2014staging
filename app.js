@@ -104,8 +104,8 @@ var Pilpres2014 = (function () {
 
                 if (i < 12) {
                     console.log("query()" + i);
-                    var value = this.historicalFeeds()[i];
-                    this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
+                    var value = self.historicalFeeds()[i];
+                    self.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
                     ++i;
                 }
             };
