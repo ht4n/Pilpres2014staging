@@ -107,20 +107,7 @@
     <a class="caption" href="deepbarhierarchy.html">MidLevel iHBar (Kabupaten)</a>
     |
     <a class="caption" href="deepbarhierarchy.html">Deep iHBar (Warning:2MBytes)</a>
-    <hr/>    
-    <div class="section">Downloads Historical Data:</div>
-    <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
-    <!-- ko with:selectedDataFeed -->
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '.csv'}">complete</a>
-    |
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-total.json'}">national</a>
-    |
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-province.json'}">province</a>
-    |
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.json'}">kabupaten</a>
-    <!-- /ko -->
-    
-    <hr />   
+    <hr/>        
     <div class="section">Provincial Votes:</div>
     <a href="#" data-bind="click:toggleProvinceDetails,text:toggleProvinceText">Show Details</a>
     <hr />
@@ -144,7 +131,20 @@
         </tbody>
     </table>
     <!-- /ko -->
+    <hr/>
+    <div class="section">Downloads Historical Data:</div>
+    <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
+    <!-- ko with:selectedDataFeed -->
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '.csv'}">complete</a>
+    |
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-total.json'}">national</a>
+    |
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-province.json'}">province</a>
+    |
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.json'}">kabupaten</a>
+    <!-- /ko -->
 
+    <hr />  
     <div>
         <span class="footer">
             The data is obtained by automatic crawling http://pilpres2014.kpu.go.id periodically and updated every 6-12 hours.

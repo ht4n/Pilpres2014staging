@@ -73,6 +73,7 @@ var Pilpres2014 = (function () {
             this.showHistoricalData(true);
             var self = this;
             self.voteEntries.removeAll();
+            var i = 0;
             var historicalDataCallback = function (data, status) {
                 console.log("response:" + status);
                 if (status !== "success") {
@@ -100,13 +101,17 @@ var Pilpres2014 = (function () {
                     self.voteEntries.push(voteEntry);
                 }
                 ;
+
+                if (i < 12) {
+                    console.log("query()" + i);
+                    var value = this.historicalFeeds()[i];
+                    this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
+                    ++i;
+                }
             };
 
-            for (var i = 0; i < this.historicalFeeds().length && i < 12; ++i) {
-                var value = this.historicalFeeds()[i];
-                this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
-            }
-            ;
+            var value = this.historicalFeeds()[i++];
+            this.query("KPU-Feeds-" + value.datetime + "-total.json", value.datetime, historicalDataCallback);
         }
     };
 
