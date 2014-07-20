@@ -74,6 +74,8 @@ var Pilpres2014 = (function () {
             var self = this;
             var voteEntries = [];
             var dataCount = 0;
+            var maxHistoricalEntries = Math.min(36, this.historicalFeeds().length);
+
             var historicalDataCallback = function (data, status) {
                 console.log("response:" + status);
                 if (status !== "success") {
@@ -103,12 +105,12 @@ var Pilpres2014 = (function () {
                 ;
 
                 ++dataCount;
-                if (dataCount == 12) {
+                if (dataCount == maxHistoricalEntries) {
                     self.voteEntries(voteEntries);
                 }
             };
 
-            for (var i = 0; i < 12; ++i) {
+            for (var i = 0; i < maxHistoricalEntries; ++i) {
                 var value = this.historicalFeeds()[i];
                 this.query("KPU-Feeds-" + value.datetime + "-total.json", { "datetime": value.datetime, "id": i }, historicalDataCallback);
             }
