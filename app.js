@@ -57,8 +57,8 @@ var Pilpres2014 = (function () {
             _this.refresh(_this.selectedDataFeed().datetime);
         });
 
-        this.toggleHistoricalText = ko.observable("Show Last 24 hrs");
-        this.toggleProvinceText = ko.observable("Show votes by province");
+        this.toggleHistoricalText = ko.observable("Show");
+        this.toggleProvinceText = ko.observable("Show");
     }
     Pilpres2014.prototype.updateVoteByDate = function (data, event) {
         var vm = ko.contextFor(event.currentTarget);
@@ -68,9 +68,10 @@ var Pilpres2014 = (function () {
     Pilpres2014.prototype.toggleHistoricalData = function () {
         if (this.showHistoricalData()) {
             this.showHistoricalData(false);
-            this.toggleHistoricalText("Show last 24 hrs");
+            this.toggleHistoricalText("Show");
         } else {
             this.showHistoricalData(true);
+            this.toggleHistoricalText("Hide");
             var self = this;
             var voteEntries = [];
             var dataCount = 0;
@@ -120,10 +121,10 @@ var Pilpres2014 = (function () {
     Pilpres2014.prototype.toggleProvinceDetails = function () {
         if (this.showProvinceDetails()) {
             this.showProvinceDetails(false);
-            this.toggleProvinceText("Show votes by province");
+            this.toggleProvinceText("Show");
         } else {
             this.showProvinceDetails(true);
-            this.toggleProvinceText("Hide votes by province");
+            this.toggleProvinceText("Hide");
 
             var self = this;
             var provinceCallback = function (data, status) {
