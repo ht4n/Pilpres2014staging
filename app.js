@@ -58,7 +58,7 @@ var Pilpres2014 = (function () {
             _this.refresh(_this.selectedDataFeed().datetime);
         });
 
-        this.toggleChartText = ko.observable("Expand");
+        this.toggleChartText = ko.observable("Collapse");
         this.toggleHistoricalText = ko.observable("Expand");
         this.toggleProvinceText = ko.observable("Expand");
     }
