@@ -37,13 +37,16 @@
     }
 </style>
 </head>
-<body>    
+<body>
+    <div style="background:#0de51e;height:32px;width:200px;"><span class="caption">Jokowi</span></div>
+    <div style="background:#ff0000;height:32px;width:200px;"><span class="caption">Prabowo</span></div>
+
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script>
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 320 - margin.left - margin.right,
-    height = 240 - margin.top - margin.bottom;
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
 var parseDate = d3.time.format("%Y%m%d%H").parse;
 
