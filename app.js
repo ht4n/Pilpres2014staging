@@ -38,6 +38,8 @@ var Pilpres2014 = (function () {
                 console.error("Invalid rekap level value " + value);
                 return;
             }
+
+            _this.refreshMainTicker(_this.lastUpdatedTime());
         });
 
         this.showProvinceDetails = ko.observable(false);
