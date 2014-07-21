@@ -10,6 +10,10 @@ table tbody {
     text-align: center;
 }
 
+.provinceTable {
+	width: 80%;
+}
+
 .scoreTable {
     margin-left: 0%;
     margin-right: 0%;
@@ -23,8 +27,15 @@ table tbody {
     font-size: 24px;
 }
 
+.sectionLink {
+    background: white;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
 .section {
-    background: #2A0438;
+    background: #02134B;
     color: white;
     padding: 4px;
     font-size: 18px;
@@ -79,12 +90,12 @@ a {
 }
 
 .footer {
-    font-size:11px;
+    font-size:12px;
 }
 
 .paragraph {
-    padding-top:2px;
-    padding-bottom:2px;
+    padding-top:4px;
+    padding-bottom:4px;
 }
 
 iframe {
