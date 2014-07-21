@@ -154,34 +154,41 @@ var Pilpres2014 = (function () {
         } else {
             this.showProvinceDetails(true);
             this.toggleProvinceText("Collapse");
-            var self = this;
-            var provinceCallback = function (data, status) {
-                console.log("response:" + status);
-                if (status !== "success") {
-                    return;
-                }
-
-                var dataJson = JSON.parse(data);
-                self.provinceVoteEntries.removeAll();
-                dataJson.forEach(function (entry) {
-                    var voteEntry = new VoteEntry();
-                    voteEntry.totalVotes1Raw(parseInt(entry.PrabowoHattaVotes));
-                    voteEntry.totalVotes2Raw(parseInt(entry.JokowiKallaVotes));
-                    voteEntry.totalVotesRaw(parseInt(entry.Total));
-
-                    voteEntry.totalVotes1(parseInt(entry.PrabowoHattaVotes).toLocaleString());
-                    voteEntry.percentageVotes1(parseFloat(entry.PrabowoHattaPercentage).toFixed(2));
-                    voteEntry.totalVotes2(parseInt(entry.JokowiKallaVotes).toLocaleString());
-                    voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2));
-                    voteEntry.total(parseInt(entry.Total).toLocaleString());
-                    voteEntry.label(entry.Province);
-
-                    self.provinceVoteEntries.push(voteEntry);
-                });
-            };
-
-            this.query("KPU-Feeds-" + this.selectedDataFeed().datetime + this.provinceSuffix, null, provinceCallback);
         }
+
+        if (this.showProvinceDetails()) {
+            this.refreshProvinceDetails();
+        }
+    };
+
+    Pilpres2014.prototype.refreshProvinceDetails = function () {
+        var self = this;
+        var provinceCallback = function (data, status) {
+            console.log("response:" + status);
+            if (status !== "success") {
+                return;
+            }
+
+            var dataJson = JSON.parse(data);
+            self.provinceVoteEntries.removeAll();
+            dataJson.forEach(function (entry) {
+                var voteEntry = new VoteEntry();
+                voteEntry.totalVotes1Raw(parseInt(entry.PrabowoHattaVotes));
+                voteEntry.totalVotes2Raw(parseInt(entry.JokowiKallaVotes));
+                voteEntry.totalVotesRaw(parseInt(entry.Total));
+
+                voteEntry.totalVotes1(parseInt(entry.PrabowoHattaVotes).toLocaleString());
+                voteEntry.percentageVotes1(parseFloat(entry.PrabowoHattaPercentage).toFixed(2));
+                voteEntry.totalVotes2(parseInt(entry.JokowiKallaVotes).toLocaleString());
+                voteEntry.percentageVotes2(parseFloat(entry.JokowiKallaPercentage).toFixed(2));
+                voteEntry.total(parseInt(entry.Total).toLocaleString());
+                voteEntry.label(entry.Province);
+
+                self.provinceVoteEntries.push(voteEntry);
+            });
+        };
+
+        this.query("KPU-Feeds-" + this.lastUpdatedTime() + this.provinceSuffix, null, provinceCallback);
     };
 
     Pilpres2014.prototype.sortProvinceData = function (field) {

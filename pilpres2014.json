@@ -5,11 +5,11 @@
             "name":"@prabowo08",
             "children": [
                 { "name":"ACEH", "size":"950977" },
-                { "name":"SUMATERA UTARA", "size":"5254642" },
+                { "name":"SUMATERA UTARA", "size":"5378824" },
                 { "name":"SUMATERA BARAT", "size":"1763932" },
                 { "name":"RIAU", "size":"1349338" },
                 { "name":"JAMBI", "size":"866190" },
-                { "name":"SUMATERA SELATAN", "size":"1384608" },
+                { "name":"SUMATERA SELATAN", "size":"1453287" },
                 { "name":"BENGKULU", "size":"433173" },
                 { "name":"LAMPUNG", "size":"2033924" },
                 { "name":"KEPULAUAN BANGKA BELITUNG", "size":"183871" },
@@ -29,25 +29,25 @@
                 { "name":"KALIMANTAN TIMUR", "size":"677844" },
                 { "name":"SULAWESI UTARA", "size":"607035" },
                 { "name":"SULAWESI TENGAH", "size":"509998" },
-                { "name":"SULAWESI SELATAN", "size":"1179332" },
+                { "name":"SULAWESI SELATAN", "size":"1194070" },
                 { "name":"SULAWESI TENGGARA", "size":"492753" },
                 { "name":"GORONTALO", "size":"378735" },
                 { "name":"SULAWESI BARAT", "size":"161309" },
                 { "name":"MALUKU", "size":"169989" },
                 { "name":"MALUKU UTARA", "size":"242433" },
                 { "name":"PAPUA", "size":"258283" },
-                { "name":"PAPUA BARAT", "size":"114178" }
+                { "name":"PAPUA BARAT", "size":"117971" }
             ]
         },
         {
             "name":"@jokowi_do2",
             "children": [
                 { "name":"ACEH", "size":"780305" },
-                { "name":"SUMATERA UTARA", "size":"6524124" },
+                { "name":"SUMATERA UTARA", "size":"6624147" },
                 { "name":"SUMATERA BARAT", "size":"530237" },
                 { "name":"RIAU", "size":"1342817" },
                 { "name":"JAMBI", "size":"894875" },
-                { "name":"SUMATERA SELATAN", "size":"1300917" },
+                { "name":"SUMATERA SELATAN", "size":"1367937" },
                 { "name":"BENGKULU", "size":"523669" },
                 { "name":"LAMPUNG", "size":"2299889" },
                 { "name":"KEPULAUAN BANGKA BELITUNG", "size":"384022" },
@@ -67,14 +67,14 @@
                 { "name":"KALIMANTAN TIMUR", "size":"1150252" },
                 { "name":"SULAWESI UTARA", "size":"692541" },
                 { "name":"SULAWESI TENGAH", "size":"596498" },
-                { "name":"SULAWESI SELATAN", "size":"2893531" },
+                { "name":"SULAWESI SELATAN", "size":"2970170" },
                 { "name":"SULAWESI TENGGARA", "size":"597111" },
                 { "name":"GORONTALO", "size":"221497" },
                 { "name":"SULAWESI BARAT", "size":"446098" },
                 { "name":"MALUKU", "size":"203175" },
                 { "name":"MALUKU UTARA", "size":"201133" },
                 { "name":"PAPUA", "size":"801083" },
-                { "name":"PAPUA BARAT", "size":"251910" }
+                { "name":"PAPUA BARAT", "size":"262446" }
             ]
         }
     ]
