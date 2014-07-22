@@ -229,11 +229,11 @@ var Pilpres2014 = (function () {
         var self = this;
         self.voteEntries.removeAll();
         self.totalVoteEntries.removeAll();
+        self.totalVoteEntries([null, null, null]);
 
         var totalCallback = function (data, status) {
             console.log("response:" + status);
             if (status !== "success") {
-                self.totalVoteEntries()[idx] = new VoteEntry();
                 return;
             }
 
@@ -267,7 +267,7 @@ var Pilpres2014 = (function () {
                 }
 
                 self.totalVoteEntries()[idx] = voteEntry;
-                self.totalVoteEntries.notifySubscribers;
+                self.totalVoteEntries.notifySubscribers();
 
                 self.percentageVotes1(voteEntry.percentageVotes1());
                 self.percentageVotes2(voteEntry.percentageVotes2());
