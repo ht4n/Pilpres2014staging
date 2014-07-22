@@ -46,7 +46,7 @@ var Pilpres2014 = (function () {
                 // format that initially has no rekap suffix
                 return "";
             } else {
-                return _this.selectedRekapLevel().toLowerCase();
+                return "." + _this.selectedRekapLevel().toLowerCase();
             }
         }, this);
 
