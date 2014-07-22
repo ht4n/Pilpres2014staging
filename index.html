@@ -196,13 +196,13 @@
     <select data-bind="options:historicalFeeds, optionsText: function(item) { return item.datetime }, value:selectedDataFeed"></select>
     <select data-bind="options:rekapLevels,value:selectedRekapLevel"></select>
     <!-- ko with:selectedDataFeed -->
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '.' + getFileRekapPrefix() + '.csv'}">complete</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '.' + $root.getFileRekapPrefix() + '.csv'}">complete</a>
     |
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-total.' + getFileRekapPrefix() + '.json'}">national</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-total.' + $root.getFileRekapPrefix() + '.json'}">national</a>
     |
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-province.' + getFileRekapPrefix() + '.json'}">province</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-province.' + $root.getFileRekapPrefix() + '.json'}">province</a>
     |
-    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.' + getFileRekapPrefix() + '.json'}">kabupaten</a>
+    <a data-bind="attr:{href:$root.baseFeedUrl + datetime + '-kabupaten.' + $root.getFileRekapPrefix() + '.json'}">kabupaten</a>
     <!-- /ko -->
 
     <hr />
