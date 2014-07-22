@@ -247,7 +247,6 @@ var Pilpres2014 = (function () {
         self.totalVoteEntries.removeAll();
         self.showTotalVoteEntries(false);
 
-        self.totalVoteEntries([null, null, null]);
         var da1Callback = function (data, status) {
             totalCallback(data, status, 0);
             self.toggleShowTotalVoteEntries();
@@ -296,8 +295,6 @@ var Pilpres2014 = (function () {
 
                 self.totalVoteEntries()[idx] = voteEntry;
                 self.toggleShowTotalVoteEntries();
-
-                self.totalVoteEntries.notifySubscribers();
 
                 self.percentageVotes1(voteEntry.percentageVotes1());
                 self.percentageVotes2(voteEntry.percentageVotes2());
