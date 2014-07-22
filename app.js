@@ -20,9 +20,9 @@ var VoteEntry = (function () {
 var Pilpres2014 = (function () {
     function Pilpres2014() {
         var _this = this;
-        this.suffix = "-total.json";
-        this.provinceSuffix = "-province.json";
-        this.selectedRekapLevel = ko.observable("DA1");
+        this.suffix = "-total.dc1.json";
+        this.provinceSuffix = "-province.dc1.json";
+        this.selectedRekapLevel = ko.observable("DC1");
 
         this.showProvinceDetails = ko.observable(false);
         this.showHistoricalData = ko.observable(false);
@@ -228,8 +228,6 @@ var Pilpres2014 = (function () {
     Pilpres2014.prototype.refreshMainTicker = function (datetime) {
         var self = this;
         self.voteEntries.removeAll();
-        self.totalVoteEntries.removeAll();
-        self.totalVoteEntries([null, null, null]);
 
         var totalCallback = function (data, status) {
             console.log("response:" + status);
