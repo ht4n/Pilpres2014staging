@@ -40,6 +40,16 @@ var Pilpres2014 = (function () {
             }
         });
 
+        this.getFileRekapPrefix = ko.computed(function () {
+            if (_this.selectedRekapLevel() == "DA1") {
+                // This is due to backward compatibility of the file
+                // format that initially has no rekap suffix
+                return "";
+            } else {
+                return _this.selectedRekapLevel().toLowerCase();
+            }
+        }, this);
+
         this.showProvinceDetails = ko.observable(false);
         this.showHistoricalData = ko.observable(false);
 
