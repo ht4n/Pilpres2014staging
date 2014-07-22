@@ -26,6 +26,7 @@ var Pilpres2014 = (function () {
 
         this.showProvinceDetails = ko.observable(false);
         this.showHistoricalData = ko.observable(false);
+        this.showTotalVoteEntries = ko.observable(false);
 
         var self = this;
         this.url = ko.observable("https://github.com/ht4n/Pilpres2014");
@@ -40,7 +41,6 @@ var Pilpres2014 = (function () {
         this.voteEntries = ko.observableArray([]);
         this.provinceVoteEntries = ko.observableArray([]);
         this.totalVoteEntries = ko.observableArray([]);
-
         this.baseFeedUrl = "https://github.com/ht4n/Pilpres2014Portal/blob/master/KPU-Feeds-";
         this.historicalFeeds = ko.observableArray([]);
         this.selectedDataFeed = ko.observable(null);
@@ -226,13 +226,31 @@ var Pilpres2014 = (function () {
         }
     };
 
+    Pilpres2014.prototype.toggleShowTotalVoteEntries = function () {
+        var self = this;
+
+        // if all three entries are not null, show the total vote entries
+        var showTotal = true;
+        var i = 0;
+        while (showTotal && i < 3) {
+            showTotal = self.totalVoteEntries()[i] != null;
+            i++;
+        }
+        if (showTotal) {
+            self.showTotalVoteEntries(true);
+        }
+    };
+
     Pilpres2014.prototype.refreshMainTicker = function (datetime) {
         var self = this;
         self.voteEntries.removeAll();
         self.totalVoteEntries.removeAll();
+        self.showTotalVoteEntries(false);
+
         self.totalVoteEntries([null, null, null]);
         var da1Callback = function (data, status) {
             totalCallback(data, status, 0);
+            self.toggleShowTotalVoteEntries();
         };
         var db1Callback = function (data, status) {
             totalCallback(data, status, 1);
@@ -244,6 +262,7 @@ var Pilpres2014 = (function () {
         var totalCallback = function (data, status, idx) {
             console.log("response:" + status);
             if (status !== "success") {
+                self.totalVoteEntries()[idx] = new VoteEntry();
                 return;
             }
 
@@ -276,6 +295,8 @@ var Pilpres2014 = (function () {
                 }
 
                 self.totalVoteEntries()[idx] = voteEntry;
+                self.toggleShowTotalVoteEntries();
+
                 self.totalVoteEntries.notifySubscribers();
 
                 self.percentageVotes1(voteEntry.percentageVotes1());
@@ -289,10 +310,12 @@ var Pilpres2014 = (function () {
             }
             ;
         };
-        var suffix = "-total.json";
-        this.query("KPU-Feeds-" + this.lastUpdatedTime() + suffix, this.lastUpdatedTime(), da1Callback);
+        var suffix;
+
         suffix = "-total.db1.json";
         this.query("KPU-Feeds-" + this.lastUpdatedTime() + suffix, this.lastUpdatedTime(), db1Callback);
+        suffix = "-total.json";
+        this.query("KPU-Feeds-" + this.lastUpdatedTime() + suffix, this.lastUpdatedTime(), da1Callback);
         suffix = "-total.dc1.json";
         this.query("KPU-Feeds-" + this.lastUpdatedTime() + suffix, this.lastUpdatedTime(), dc1Callback);
     };
